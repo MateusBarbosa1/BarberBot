@@ -1,0 +1,20 @@
+{
+  "name": "botagendamento2",
+  "version": "1.0.0",
+  "description": "Bot agendamento sem site para o tio de joão.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "Barbosa Dev",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.2.1",
+    "@whiskeysockets/baileys": "^6.7.9",
+    "dotenv": "^16.4.5",
+    "prisma": "^6.2.1",
+    "puppeteer": "^24.1.0",
+    "puppeteer-core": "^24.1.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
