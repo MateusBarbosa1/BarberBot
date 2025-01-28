@@ -19,6 +19,7 @@ const startBot = async () => {
     const sock = makeWASocket({
         auth: state,
         printQRInTerminal: true, // Mostra o QR code automaticamente no terminal
+        markOnlineOnConnect: false
     });
 
     // Evento de QR Code
