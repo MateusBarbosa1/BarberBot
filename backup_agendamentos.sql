@@ -2,10 +2,8 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 16.8 (Debian 16.8-1.pgdg120+1)
+-- Dumped from database version 16.9 (Debian 16.9-1.pgdg120+1)
 -- Dumped by pg_dump version 16.8 (Ubuntu 16.8-1.pgdg20.04+1)
-
--- Started on 2025-05-27 22:50:03 UTC
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -19,22 +17,20 @@ SET client_min_messages = warning;
 SET row_security = off;
 
 --
--- TOC entry 5 (class 2615 OID 2200)
--- Name: public; Type: SCHEMA; Schema: -; Owner: agendamento_bruno_user
+-- Name: public; Type: SCHEMA; Schema: -; Owner: agendamentos_723j_user
 --
 
 -- *not* creating schema, since initdb creates it
 
 
-ALTER SCHEMA public OWNER TO agendamento_bruno_user;
+ALTER SCHEMA public OWNER TO agendamentos_723j_user;
 
 SET default_tablespace = '';
 
 SET default_table_access_method = heap;
 
 --
--- TOC entry 215 (class 1259 OID 16396)
--- Name: Agendamentos; Type: TABLE; Schema: public; Owner: agendamento_bruno_user
+-- Name: Agendamentos; Type: TABLE; Schema: public; Owner: agendamentos_723j_user
 --
 
 CREATE TABLE public."Agendamentos" (
@@ -49,11 +45,10 @@ CREATE TABLE public."Agendamentos" (
 );
 
 
-ALTER TABLE public."Agendamentos" OWNER TO agendamento_bruno_user;
+ALTER TABLE public."Agendamentos" OWNER TO agendamentos_723j_user;
 
 --
--- TOC entry 216 (class 1259 OID 16401)
--- Name: HorariosBruno; Type: TABLE; Schema: public; Owner: agendamento_bruno_user
+-- Name: HorariosBruno; Type: TABLE; Schema: public; Owner: agendamentos_723j_user
 --
 
 CREATE TABLE public."HorariosBruno" (
@@ -62,11 +57,10 @@ CREATE TABLE public."HorariosBruno" (
 );
 
 
-ALTER TABLE public."HorariosBruno" OWNER TO agendamento_bruno_user;
+ALTER TABLE public."HorariosBruno" OWNER TO agendamentos_723j_user;
 
 --
--- TOC entry 217 (class 1259 OID 16406)
--- Name: HorariosWallyson; Type: TABLE; Schema: public; Owner: agendamento_bruno_user
+-- Name: HorariosWallyson; Type: TABLE; Schema: public; Owner: agendamentos_723j_user
 --
 
 CREATE TABLE public."HorariosWallyson" (
@@ -75,11 +69,10 @@ CREATE TABLE public."HorariosWallyson" (
 );
 
 
-ALTER TABLE public."HorariosWallyson" OWNER TO agendamento_bruno_user;
+ALTER TABLE public."HorariosWallyson" OWNER TO agendamentos_723j_user;
 
 --
--- TOC entry 218 (class 1259 OID 16411)
--- Name: _prisma_migrations; Type: TABLE; Schema: public; Owner: agendamento_bruno_user
+-- Name: _prisma_migrations; Type: TABLE; Schema: public; Owner: agendamentos_723j_user
 --
 
 CREATE TABLE public._prisma_migrations (
@@ -94,12 +87,10 @@ CREATE TABLE public._prisma_migrations (
 );
 
 
-ALTER TABLE public._prisma_migrations OWNER TO agendamento_bruno_user;
+ALTER TABLE public._prisma_migrations OWNER TO agendamentos_723j_user;
 
 --
--- TOC entry 3369 (class 0 OID 16396)
--- Dependencies: 215
--- Data for Name: Agendamentos; Type: TABLE DATA; Schema: public; Owner: agendamento_bruno_user
+-- Data for Name: Agendamentos; Type: TABLE DATA; Schema: public; Owner: agendamentos_723j_user
 --
 
 COPY public."Agendamentos" (id, date, "time", name, barbeiro, numero, "horarioAgendamento", servico) FROM stdin;
@@ -1195,6 +1186,7 @@ fe1b3438-aec6-496c-aad1-d722aeb1b7f6	2025-03-22 00:00:00	15:20	marcos rodrigues	
 840c59ad-d4bb-48be-adfd-a62f6dfa8da8	2025-03-22 00:00:00	08:00	tiago	Bruno	558181319163@s.whatsapp.net	2025-03-16 00:00:00	Cabelo
 f0d158eb-e8a1-46d5-a96a-1ecef4cbd35e	2025-03-24 00:00:00	16:00	cassia	Wallyson	558199658643@s.whatsapp.net	2025-03-21 00:00:00	Cabelo
 603d1d53-4c9b-457c-abb7-be15277edb21	2025-03-18 00:00:00	13:20	joão rommel	Bruno	558182224217@s.whatsapp.net	2025-03-16 00:00:00	Cabelo
+6f7bd379-db2b-449a-a67d-5cd485a150ee	2025-05-30 00:00:00	18:40	Guilherme Santos 	Bruno	local	2025-05-28 10:29:16.878	Cabelo
 a1e78478-d179-4e5f-b10b-716272dc33ad	2025-03-19 00:00:00	16:00	hugo	Bruno	558199154395@s.whatsapp.net	2025-03-16 00:00:00	Cabelo+Sobrancelha
 7192030b-1d5c-4b4a-9d5b-af162dd6d01d	2025-03-17 00:00:00	15:20	kaio	Wallyson	558179098531@s.whatsapp.net	2025-03-16 00:00:00	Cabelo
 a0684f02-95ce-4b66-9bf9-e0ea486b13ef	2025-03-19 00:00:00	09:00	joaquim	Bruno	558199504021@s.whatsapp.net	2025-03-16 00:00:00	Cabelo+Sobrancelha
@@ -1996,6 +1988,7 @@ ecdea59e-4425-4176-b3ab-8a8bf54368bd	2025-04-25 00:00:00	13:20	João Mendes 	Wal
 b80bc559-b576-4a0b-aae2-d3f0ee73c821	2025-04-25 00:00:00	08:00	Marcado 	Wallyson	local	2025-04-24 20:29:49.112	Cabelo
 65bc736b-35ea-4cac-bd89-3656dfdbf709	2025-04-29 00:00:00	09:20	cláudio henrique	Wallyson	558188482085@s.whatsapp.net	2025-04-24 00:00:00	Cabelo
 caa53243-faa9-45e8-b755-d6ec35a00c23	2025-04-25 00:00:00	17:20	wesley	Wallyson	558199817133@s.whatsapp.net	2025-04-24 00:00:00	Cabelo
+8f60a39a-3ad9-4c90-845c-94b42d42e6cc	2025-05-28 00:00:00	16:00	Marcado criança 	Wallyson	local	2025-05-28 18:21:04.606	Cabelo
 c546752d-161b-4fbf-ab50-fe7809b483c9	2025-04-26 00:00:00	14:00	felipe	Wallyson	558181451150@s.whatsapp.net	2025-04-24 00:00:00	Cabelo+Sobrancelha
 34568538-a248-41d0-acf9-0b483b6e28da	2025-04-26 00:00:00	13:20	marcos elielson	Wallyson	558195356602@s.whatsapp.net	2025-04-24 00:00:00	Cabelo+Barba
 8602bde6-7061-439e-9a37-ddc50a87ac51	2025-04-26 00:00:00	14:40	mario	Wallyson	558381367304@s.whatsapp.net	2025-04-24 00:00:00	Cabelo
@@ -2011,13 +2004,11 @@ c503da49-49b4-414a-a550-ca64a5872104	2025-04-26 00:00:00	09:20	mathias lima	Wall
 c7c57eff-8a89-4f99-9363-2cc5043ee7e9	2025-06-27 00:00:00	11:00	roberto guedes	Bruno	558198028971@s.whatsapp.net	2025-04-24 00:00:00	Cabelo
 afde033f-356e-4d38-b8ea-a2b9677705f5	2025-04-28 00:00:00	16:40	Filho de Júnior Santa Maria 	Bruno	local	2025-04-25 01:15:17.882	Cabelo
 64b744b6-8289-4f79-83af-dd31ef416f9a	2025-06-20 00:00:00	08:00	eudes máquina	Wallyson	558184793136@s.whatsapp.net	2025-04-24 00:00:00	Cabelo
-0b191d0e-013a-49b7-bf6a-99ae70e219c5	2025-06-20 00:00:00	16:00	ullisses	Bruno	558182686327@s.whatsapp.net	2025-04-25 00:00:00	Cabelo
 29de27b2-3220-4f72-a4ff-4e9d7e70c485	2025-04-26 00:00:00	16:00	calebe	Wallyson	558196987419@s.whatsapp.net	2025-04-25 00:00:00	Cabelo
 2d1685e1-239a-4623-86a0-29f524d01213	2025-04-28 00:00:00	10:20	zaldinho	Bruno	558198591039@s.whatsapp.net	2025-04-25 00:00:00	Cabelo
 3598cb3b-77f0-4670-a1de-7d4d3a9c29d4	2025-06-18 00:00:00	09:40	josé everson	Bruno	558179003193@s.whatsapp.net	2025-04-25 00:00:00	Cabelo
 43741982-97c8-4224-a596-b0f42b1ce363	2025-06-18 00:00:00	10:20	wanderson josé	Bruno	558179003193@s.whatsapp.net	2025-04-25 00:00:00	Cabelo
 f70a7d40-0b6b-4865-ba0e-4be015023abd	2025-06-21 00:00:00	16:00	gabriel silva	Bruno	558171039700@s.whatsapp.net	2025-04-25 00:00:00	Cabelo+Sobrancelha
-77d355d4-4762-4830-bf73-7d7b5ad1d0dc	2025-06-20 00:00:00	17:20	lucas lucena	Bruno	558198991478@s.whatsapp.net	2025-04-25 00:00:00	Cabelo+Sobrancelha
 a47f4b9c-b730-4f52-b9ee-2f6cf8a591b4	2025-06-18 00:00:00	11:40	matheus ryan	Bruno	558198446732@s.whatsapp.net	2025-04-25 00:00:00	Cabelo
 de5be3a5-3897-4c23-b2af-0261d9be0328	2025-04-26 00:00:00	18:00	marcos	Wallyson	558197149668@s.whatsapp.net	2025-04-25 00:00:00	Cabelo
 464232e2-cef4-4417-9d58-957462bf2cd5	2025-04-26 00:00:00	10:40	fábio	Wallyson	5521980058628@s.whatsapp.net	2025-04-25 00:00:00	Cabelo
@@ -2033,12 +2024,7 @@ f1133bca-decf-4212-afda-3a92e27f20a6	2025-04-26 00:00:00	11:20	Rodrigo 	Wallyson
 655707d2-459b-4d92-97c9-08f95c5ce9f0	2025-04-28 00:00:00	11:00	pedro henrique	Bruno	558198446899@s.whatsapp.net	2025-04-25 00:00:00	Cabelo
 4bb712e2-e156-4ea6-8864-7e97a9b3e1a4	2025-06-19 00:00:00	15:20	yan	Bruno	558199168954@s.whatsapp.net	2025-04-25 00:00:00	Cabelo
 1419ce1e-ee04-4ffd-abd3-9a0dc5bfdf33	2025-06-19 00:00:00	18:40	arthur sales	Bruno	558199775133@s.whatsapp.net	2025-04-25 00:00:00	Cabelo+Sobrancelha
-352a26b0-3ad0-45af-8143-145af2282715	2025-06-20 00:00:00	18:40	Ocupado 	Bruno	local	2025-04-26 10:15:46.836	Cabelo
-49841cfd-42d7-4b09-8bfe-6fb3098411ac	2025-06-20 00:00:00	19:20	Ocupado	Bruno	local	2025-04-26 10:16:04.912	Cabelo
-9ade263a-6adf-44ac-99ca-06865abd29f5	2025-06-20 00:00:00	20:00	Ocupado 	Bruno	local	2025-04-26 10:16:23.747	Cabelo
-86c57197-b547-4de3-9f7c-92414a0b0d3a	2025-06-21 00:00:00	08:00	Ocupado	Bruno	local	2025-04-26 10:16:41.89	Cabelo
 52458a2a-241e-4779-9249-5f1a0cd7c00d	2025-06-21 00:00:00	08:40	Ocupado	Bruno	local	2025-04-26 10:16:59.203	Cabelo
-3577a6f5-8218-437c-8e50-74f8335c341d	2025-06-21 00:00:00	09:20	Ocupado	Bruno	local	2025-04-26 10:17:25.166	Cabelo
 decacf14-94b7-4597-bf77-408e8c63b0e3	2025-06-21 00:00:00	18:00	Ocupado	Bruno	local	2025-04-26 10:17:42.688	Cabelo
 24ba6440-a781-4cb7-82fa-8e1e4a4773ab	2025-04-28 00:00:00	09:40	mateus	Bruno	558196083218@s.whatsapp.net	2025-04-26 00:00:00	Cabelo+Barba
 681dd743-6cbc-4a1d-adc5-7c31ea229762	2025-04-26 00:00:00	12:00	rikelmy	Wallyson	558189992109@s.whatsapp.net	2025-04-26 00:00:00	Cabelo
@@ -2251,7 +2237,6 @@ db789cea-efbe-4feb-8628-d5dd18c042f6	2025-05-09 00:00:00	18:00	bruno	Bruno	55818
 99d97308-9ab2-4e23-b22d-c1c6610a5318	2025-05-07 00:00:00	15:20	Gelson	Wallyson	local	2025-05-05 10:03:54.448	Cabelo
 c99af075-916b-4f40-8f7a-7dd0a072ec7f	2025-05-08 00:00:00	18:00	ewerton adryan	Bruno	558198289810@s.whatsapp.net	2025-05-05 00:00:00	Cabelo
 74b18a5b-9581-4e6a-be9a-86650009e2ff	2025-06-19 00:00:00	16:40	zaldinho delícia de bruninho	Bruno	558198591039@s.whatsapp.net	2025-05-05 00:00:00	Cabelo
-c12631a0-bd99-4d5a-bc74-192038821f26	2025-06-20 00:00:00	10:20	renan silva	Bruno	558199185971@s.whatsapp.net	2025-05-05 00:00:00	Cabelo
 f521b5c9-728c-45d3-acb2-c57212287e1e	2025-05-05 00:00:00	11:40	pedro henrique	Wallyson	558195071416@s.whatsapp.net	2025-05-05 00:00:00	Cabelo+Sobrancelha
 3961b1f7-7aac-456d-83e2-0a61cb72c232	2025-06-17 00:00:00	18:00	wellington arruda	Wallyson	558196852620@s.whatsapp.net	2025-05-05 00:00:00	Cabelo+Barba
 8ab6cccd-8e99-4bc2-b39a-0f6622f4e643	2025-06-19 00:00:00	16:00	marlon	Bruno	558185124815@s.whatsapp.net	2025-05-05 00:00:00	Cabelo
@@ -2263,11 +2248,9 @@ c856d41e-b3fa-48d1-9f80-2ef67aa2f292	2025-05-05 00:00:00	18:00	ravi	Wallyson	558
 96a4a6f8-2b3f-4a95-8c90-4edc09226a54	2025-06-19 00:00:00	13:20	arthur	Bruno	558194115511@s.whatsapp.net	2025-05-05 00:00:00	Cabelo+Barba
 88942fd5-2112-40a4-a722-fe1dc7e61654	2025-05-08 00:00:00	09:20	horlean	Wallyson	558281363560@s.whatsapp.net	2025-05-05 00:00:00	Cabelo+Sobrancelha
 43fe8063-182e-49ea-8ffd-6b23de06579d	2025-05-15 00:00:00	18:00	matheus vinicius	Bruno	558197894492@s.whatsapp.net	2025-05-05 00:00:00	Cabelo
-00363b39-6749-42e4-893b-19c5de6575f2	2025-06-21 00:00:00	10:00	gabriel	Bruno	558197699397@s.whatsapp.net	2025-05-05 00:00:00	Cabelo
 6e58f55c-355d-40cd-9274-922a06523e87	2025-05-05 00:00:00	14:40	Wellington 	Wallyson	local	2025-05-05 13:33:11.165	Cabelo
 bf3d7675-86b3-4aac-a076-6b8163de19a0	2025-06-18 00:00:00	16:00	leonardo	Bruno	558174001016@s.whatsapp.net	2025-05-05 00:00:00	Cabelo
 2d1a2d0f-26ac-4f6d-a7dd-a7f03b550959	2025-06-27 00:00:00	16:00	joão paulo	Bruno	558179098531@s.whatsapp.net	2025-05-05 00:00:00	Cabelo+Barba
-5a237e18-5942-49cf-8105-7c1faeb3a976	2025-06-23 00:00:00	18:40	márcio	Wallyson	558199069172@s.whatsapp.net	2025-05-05 00:00:00	Cabelo
 aa0ab1c3-329a-46fc-96cb-dfe43a9e0acd	2025-05-07 00:00:00	18:40	carlos	Bruno	558197823796@s.whatsapp.net	2025-05-05 00:00:00	Cabelo+Sobrancelha
 27b276d1-c631-496e-b461-a401cb18e6f1	2025-06-20 00:00:00	18:00	josé anderson	Wallyson	558197186991@s.whatsapp.net	2025-05-05 00:00:00	Cabelo+Barba
 b49de627-2383-42e2-aa25-db23d4420a6b	2025-05-06 00:00:00	11:00	deyvson	Bruno	558195479577@s.whatsapp.net	2025-05-05 00:00:00	Cabelo
@@ -2294,7 +2277,6 @@ e2390275-1c38-454f-8f16-87483d51a863	2025-05-07 00:00:00	11:40	Pablo botox 	Brun
 1b3a8664-ba55-4d20-8d03-1cc24960aecc	2025-05-12 00:00:00	18:40	Robson 	Wallyson	local	2025-05-05 21:19:24.073	Cabelo+Barba
 4c5c4b92-b101-41a2-99d3-d4e9221c4e18	2025-06-16 00:00:00	18:40	Robson	Wallyson	local	2025-05-05 21:20:27.771	Cabelo+Barba
 b39ffa84-cacf-439a-ae98-7f2c6448692b	2025-07-02 00:00:00	16:00	Robson 	Wallyson	local	2025-05-05 21:21:16.264	Cabelo+Barba
-dfda6ee5-537d-466f-a8de-f3174f5321b1	2025-06-17 00:00:00	16:40	fernando	Wallyson	558199410150@s.whatsapp.net	2025-05-05 00:00:00	Cabelo+Sobrancelha
 dee17b9f-4481-4441-b2a2-b2a9487d3181	2025-05-14 00:00:00	16:40	fernando	Wallyson	558199410150@s.whatsapp.net	2025-05-05 00:00:00	Cabelo+Sobrancelha
 ef438a5c-64bb-4208-baa1-be54470a697d	2025-06-19 00:00:00	10:20	del alumínio	Bruno	558197796167@s.whatsapp.net	2025-05-05 00:00:00	Cabelo+Barba
 673b8da5-2fa9-4be8-a918-cce395b958e6	2025-05-07 00:00:00	10:00	Gabriel 	Wallyson	local	2025-05-05 22:37:22.9	Cabelo
@@ -2345,7 +2327,6 @@ a21c064f-45ed-4ce2-b190-e4b58f7e9653	2025-05-09 00:00:00	19:20	genildo	Bruno	558
 25ba1de0-6e5e-4427-b8f5-45b5e319ba03	2025-05-09 00:00:00	20:00	thomas	Bruno	558181391720@s.whatsapp.net	2025-05-07 00:00:00	Cabelo
 ff5f03ec-c8d1-4f4d-9cb7-3ca29be5821d	2025-05-08 00:00:00	18:00	john	Wallyson	558197904314@s.whatsapp.net	2025-05-07 00:00:00	Cabelo+Barba
 9c05dacf-a4c6-4e80-ae1d-331bc5cef097	2025-06-20 00:00:00	15:20	Thiago 	Wallyson	local	2025-05-07 13:35:07.868	Cabelo+Barba
-9087fe38-4852-4d2a-a4e7-11cb993a14bc	2025-06-14 00:00:00	09:20	luan	Bruno	558184474628@s.whatsapp.net	2025-05-07 00:00:00	Cabelo+Sobrancelha
 e60f44de-22e7-4326-b2c6-28227ba2229d	2025-05-08 00:00:00	15:20	rafael	Wallyson	558188763249@s.whatsapp.net	2025-05-07 00:00:00	Cabelo
 b244b22e-22ec-4c76-b666-f9b246be764a	2025-05-09 00:00:00	09:00	windney	Bruno	558187774760@s.whatsapp.net	2025-05-07 00:00:00	Cabelo
 ae86bb27-66fc-4916-b243-64f82456e18f	2025-06-19 00:00:00	17:20	gustavo farias	Wallyson	558196195368@s.whatsapp.net	2025-05-07 00:00:00	Cabelo
@@ -2596,7 +2577,6 @@ a8150030-bde7-40ee-903c-e2a24b5d95b9	2025-05-23 00:00:00	17:20	welliton fonseca	
 2b33a7bd-093e-4eae-a4b6-bd73c10c1075	2025-05-22 00:00:00	09:00	anderson carlos	Bruno	558196579148@s.whatsapp.net	2025-05-20 00:00:00	Cabelo
 40bad595-0545-4df6-86cd-c8d7f9f62c71	2025-05-24 00:00:00	10:40	joão guilherme	Bruno	558192101006@s.whatsapp.net	2025-05-20 00:00:00	Cabelo
 f918a052-fd19-41b3-8936-a7ee83443c63	2025-05-24 00:00:00	08:00	daniel queiroz	Bruno	558181473848@s.whatsapp.net	2025-05-20 00:00:00	Cabelo
-f2bc17f3-01a5-4aae-b6cd-8e4965859e73	2025-06-17 00:00:00	18:40	maurycio	Bruno	558197162890@s.whatsapp.net	2025-05-20 00:00:00	Cabelo+Sobrancelha
 5c4dfe78-ab18-4434-9c0d-1382ec2998af	2025-05-21 00:00:00	14:40	gonzaga neto	Bruno	558198514795@s.whatsapp.net	2025-05-20 00:00:00	Cabelo
 b599eac4-4da8-45bc-8305-bf689e9b2e68	2025-05-21 00:00:00	18:00	carlos	Wallyson	558198314747@s.whatsapp.net	2025-05-20 00:00:00	Cabelo
 1c963640-b7f7-4c16-b671-d871bdbf9955	2025-05-21 00:00:00	14:00	pedro henrique	Wallyson	558195071416@s.whatsapp.net	2025-05-20 00:00:00	Cabelo+Sobrancelha
@@ -2670,7 +2650,6 @@ a4b29fab-b985-4dee-adc5-92c08cf84889	2025-05-24 00:00:00	17:20	João sedoufo 	Wa
 b7e517b5-0c80-4cd5-a496-8000bf48a307	2025-05-26 00:00:00	18:40	Gustavo 	Wallyson	local	2025-05-23 12:52:43.91	Cabelo
 706f6c97-8df8-4d96-9765-cee0a24b7d26	2025-05-23 00:00:00	17:20	juininho	Wallyson	558194082765@s.whatsapp.net	2025-05-23 00:00:00	Cabelo
 83df8452-b27a-415b-b654-911dc06f3465	2025-05-24 00:00:00	13:20	Alan 	Wallyson	local	2025-05-23 13:47:50.917	Cabelo
-38cd02c2-5be7-4012-8771-32dd6b94442f	2025-06-26 00:00:00	18:00	lucas leal	Bruno	558182605271@s.whatsapp.net	2025-05-23 00:00:00	Cabelo+Sobrancelha
 101e7345-02be-4f21-8844-8c365a962ae1	2025-05-24 00:00:00	12:00	gustavo	Wallyson	558199587573@s.whatsapp.net	2025-05-23 00:00:00	Cabelo+Sobrancelha
 f9a08da0-d171-4669-8322-4ed4cce817d0	2025-06-12 00:00:00	18:00	matheus	Bruno	558197894492@s.whatsapp.net	2025-05-23 00:00:00	Cabelo
 3f2710bf-887d-4a5c-beb8-67f925917478	2025-05-23 00:00:00	14:40	pedro robson	Wallyson	558198929820@s.whatsapp.net	2025-05-23 00:00:00	Cabelo
@@ -2728,7 +2707,6 @@ c9d49827-fb12-4a29-902a-663b05582a35	2025-06-19 00:00:00	13:20	Gerdo 	Wallyson	l
 745965b1-d2a4-4776-86f0-5fca56c8a20f	2025-06-07 00:00:00	15:20	Gerdo 	Wallyson	local	2025-05-26 15:07:56.476	Cabelo
 3e1fca25-403f-4404-9583-42be4381fdc1	2025-05-27 00:00:00	10:00	Eraldo 	Wallyson	local	2025-05-26 15:12:08.27	Cabelo+Barba
 6ae440d5-2ff4-4c86-a236-e4d6992ea6d3	2025-05-27 00:00:00	13:20	ataliba albuquerque	Bruno	558182671510@s.whatsapp.net	2025-05-26 00:00:00	Barba
-ef02efad-d097-4c85-b20c-f196d8d06ca5	2025-05-29 00:00:00	16:40	jose lucas farias dos santos	Bruno	558187782121@s.whatsapp.net	2025-05-26 00:00:00	Cabelo+Barba
 9aad32e8-7a4b-4f63-aa6f-3eb99b7d7551	2025-05-29 00:00:00	16:00	Weligton 	Wallyson	local	2025-05-26 18:59:33.004	Cabelo
 6591b2e4-c013-484d-a567-45916b70ddb9	2025-05-31 00:00:00	16:40	jônata davi	Bruno	558199773748@s.whatsapp.net	2025-05-26 00:00:00	Cabelo
 3bf13365-5589-4665-8bdf-11cbf49e4d75	2025-06-19 00:00:00	16:00	jeferson	Wallyson	558198265483@s.whatsapp.net	2025-05-26 00:00:00	Cabelo+Barba
@@ -2751,7 +2729,6 @@ ac0f4011-1149-4d2b-bade-edf4aa0cff17	2025-05-27 00:00:00	15:20	Indisponivel	Brun
 d915a149-5e91-493f-ab38-6ba792e491e5	2025-05-27 00:00:00	16:00	Indisponivel	Bruno	Indisponivel	2025-05-27 12:43:26.666	
 aa5d3342-c274-49f3-a660-55fa1c1bb929	2025-05-27 00:00:00	16:40	Indisponivel	Bruno	Indisponivel	2025-05-27 12:43:26.697	
 c0d303c3-ba60-4cd2-b8f5-6f33d50a89e7	2025-05-27 00:00:00	17:20	Indisponivel	Bruno	Indisponivel	2025-05-27 12:43:26.733	
-47c2b568-22b4-4b08-ae4b-d4a84b43f077	2025-05-28 00:00:00	16:00	eduardo	Bruno	558196049780@s.whatsapp.net	2025-05-27 00:00:00	Cabelo
 ea85d018-cc77-4cae-b5f5-4d95b5e035a1	2025-06-05 00:00:00	17:20	miguel	Bruno	558199728099@s.whatsapp.net	2025-05-27 00:00:00	Cabelo
 bf4ea373-ab1a-4eb6-8a06-63dc12cf5db4	2025-05-27 00:00:00	10:20	emídio	Bruno	558181606802@s.whatsapp.net	2025-05-27 00:00:00	Cabelo
 7427f5f0-9d2b-4d72-a800-f78ce5757101	2025-05-27 00:00:00	17:20	Saulo	Wallyson	local	2025-05-27 13:45:28.199	Cabelo
@@ -2766,7 +2743,6 @@ c2697476-9e68-4853-b406-4cbc54362a18	2025-05-28 00:00:00	09:00	João Danielson 	
 27981345-77a1-4fd6-8d25-9a68febc736f	2025-05-27 00:00:00	17:20	Indisponivel	Bruno	Indisponivel	2025-05-27 18:32:33.236	
 20e65c1d-8617-4c4a-bb12-a2de2a1242cf	2025-05-27 00:00:00	18:00	Indisponivel	Bruno	Indisponivel	2025-05-27 18:32:33.334	
 ac3716b4-db30-4724-a7a8-1fbc80e31152	2025-05-27 00:00:00	18:40	Indisponivel	Bruno	Indisponivel	2025-05-27 18:32:33.367	
-936582e7-7398-49e8-b0a5-9fd36546b7c2	2025-06-05 00:00:00	18:00	victor alexandre	Bruno	558197610116@s.whatsapp.net	2025-05-27 00:00:00	Cabelo+Sobrancelha
 99e7e5d4-2be8-457d-8343-74c992a030be	2025-05-29 00:00:00	18:40	mateus	Bruno	558196083218@s.whatsapp.net	2025-05-27 00:00:00	Cabelo+Barba
 dad8624d-8e34-4f5e-a066-9f7a0f766c69	2025-06-05 00:00:00	14:40	renan	Bruno	558182497215@s.whatsapp.net	2025-05-27 00:00:00	Cabelo+Sobrancelha
 3e677ea1-491b-4366-a059-d442c01cc09d	2025-05-28 00:00:00	13:20	João Carmen 	Wallyson	local	2025-05-27 19:46:01.671	Cabelo
@@ -2777,29 +2753,606 @@ f6cdc1fb-64d4-41dc-986e-be4d6bda929c	2025-05-28 00:00:00	08:00	Carlos 	Wallyson	
 3f7047ed-7091-4965-9a7a-8dde5a1f843c	2025-05-28 00:00:00	11:00	marcos queiroz	Bruno	558181473848@s.whatsapp.net	2025-05-27 00:00:00	Cabelo
 ea71c7f9-f8d9-42d3-bfa2-7b4ee68b6244	2025-06-06 00:00:00	16:00	lucas gabriel	Wallyson	558199333703@s.whatsapp.net	2025-05-27 00:00:00	Cabelo
 f581a0b5-d5d6-41cd-a6de-32998a8bc7ab	2025-05-28 00:00:00	15:20	Pedro 	Wallyson	local	2025-05-27 21:54:36.081	Cabelo
+6f19a2d4-a37e-470e-b3b1-1aad1b340849	2025-05-29 00:00:00	09:00	hatus	Bruno	558199706416@s.whatsapp.net	2025-05-27 00:00:00	Cabelo+Barba
+195daa13-1ca8-4d9e-bb46-b4dc01831de1	2025-05-29 00:00:00	18:40	marcos e filho	Wallyson	558195363219@s.whatsapp.net	2025-05-28 00:00:00	Cabelo
+48a936e3-aa4a-411e-ac1e-6f0b955aeac6	2025-06-18 00:00:00	16:40	maurycio	Bruno	558197162890@s.whatsapp.net	2025-05-28 00:00:00	Cabelo+Sobrancelha
+d44bdd34-2e63-46af-979d-4d40bf0e850b	2025-05-31 00:00:00	10:00	maurycio	Bruno	558197162890@s.whatsapp.net	2025-05-28 00:00:00	Cabelo+Sobrancelha
+ee8b5a67-b903-4024-8074-68a113754015	2025-06-04 00:00:00	14:40	emídio	Bruno	558181606802@s.whatsapp.net	2025-05-28 00:00:00	Cabelo
+ad2e8c0a-0b40-425b-b87e-4b856a30b602	2025-05-30 00:00:00	19:20	denílson	Bruno	558197084296@s.whatsapp.net	2025-05-28 00:00:00	Barba
+1752c8b1-4ba3-4590-841a-20f51d74930c	2025-05-28 00:00:00	14:00	renan	Wallyson	558195330370@s.whatsapp.net	2025-05-28 00:00:00	Cabelo
+9dc41cdc-2f38-498f-90de-12ebb0615834	2025-05-28 00:00:00	14:40	felipe	Wallyson	558181451150@s.whatsapp.net	2025-05-28 00:00:00	Cabelo
+0b2b388b-a30b-4d71-b278-1539e28ba4d9	2025-05-30 00:00:00	09:40	deyvson	Bruno	558195479577@s.whatsapp.net	2025-05-28 00:00:00	Cabelo
+35ce38e5-8dfc-42f7-8ed9-1a685f2a1578	2025-06-05 00:00:00	18:40	felipe silva	Bruno	558196065070@s.whatsapp.net	2025-05-28 00:00:00	Cabelo
+b0f622be-7c9d-42fa-bdb7-d872bd69b5d2	2025-05-29 00:00:00	11:20	Levino 	Wallyson	local	2025-05-28 18:24:24.112	Cabelo+Barba
+da898964-1502-4bfb-b8db-6c6f3adaf66f	2025-05-28 00:00:00	16:40	Eduardo	Bruno	local	2025-05-28 18:25:58.291	Cabelo
+727803ce-74db-4358-aa21-2a9b6c400b2d	2025-05-30 00:00:00	15:20	Wellington 	Wallyson	local	2025-05-28 19:16:11.863	Cabelo
+d4260d21-b906-4375-a2ca-055d89c9271a	2025-05-31 00:00:00	10:40	fábio cria	Bruno	5521980058628@s.whatsapp.net	2025-05-28 00:00:00	Acabamento (Pezinho)
+c8210d36-9c80-4973-b549-5a1da7333b18	2025-06-11 00:00:00	19:20	Paulo 	Bruno	local	2025-05-28 22:36:59.966	Cabelo
+2a720e8e-9f7d-4291-b536-09a781d3a257	2025-05-29 00:00:00	10:00	Gabriel 	Wallyson	local	2025-05-28 22:39:58.467	Cabelo
+e50e1b15-13fa-4264-8f5a-17b5d3ed06d7	2025-05-30 00:00:00	14:00	dubolo	Bruno	558196647899@s.whatsapp.net	2025-05-28 00:00:00	Cabelo+Sobrancelha
+69cc8bd6-152d-4d2a-b08e-320529b5b503	2025-06-14 00:00:00	14:40	dubolo	Bruno	558196647899@s.whatsapp.net	2025-05-28 00:00:00	Cabelo+Sobrancelha
+948a8570-1360-49bf-9ba1-05630c075b1d	2025-05-29 00:00:00	16:40	joão pedro	Bruno	558181310245@s.whatsapp.net	2025-05-28 00:00:00	Cabelo
+b896dd49-6911-4b9a-b73f-2976dad9b75a	2025-05-31 00:00:00	15:20	osmar	Bruno	558196267018@s.whatsapp.net	2025-05-28 00:00:00	Cabelo
+32e8f4bc-b1bd-4fbd-9015-dd6b504d7945	2025-05-30 00:00:00	14:40	matheus ryan	Bruno	558198446732@s.whatsapp.net	2025-05-28 00:00:00	Cabelo
+bad821e7-f604-4242-a3fc-347e053a5e8e	2025-05-29 00:00:00	18:00	Kuan	Wallyson	local	2025-05-29 01:22:19.206	Cabelo
+f277c6d1-299c-4823-8a06-19f069eb9260	2025-05-30 00:00:00	14:00	samuel	Wallyson	558197939904@s.whatsapp.net	2025-05-28 00:00:00	Cabelo+Sobrancelha
+81ee8f74-563d-4bde-92a1-3b1480ed6dc5	2026-08-17 00:00:00	17:20	emanuel	Bruno	558197496524@s.whatsapp.net	2025-05-29 00:00:00	Cabelo+Sobrancelha
+0b7af59b-ace3-4165-9f85-1fd20c29dc67	2025-05-30 00:00:00	08:00	eudes fera	Wallyson	558184793136@s.whatsapp.net	2025-05-29 00:00:00	Cabelo
+ef7ce6ed-4d89-4daf-8bb3-631275ef7435	2025-05-29 00:00:00	09:40	sérgio	Bruno	558198288830@s.whatsapp.net	2025-05-29 00:00:00	Cabelo
+cd715583-caef-416f-a883-5f6468f41897	2025-05-30 00:00:00	20:00	Marcos 	Wallyson	local	2025-05-29 12:40:30.338	Cabelo+Barba
+e14c8431-9188-4838-97ba-1016f86fed25	2025-05-29 00:00:00	11:00	rennan	Bruno	558179005726@s.whatsapp.net	2025-05-29 00:00:00	Cabelo
+947f3004-8991-41d3-a83d-efa39933af35	2025-05-30 00:00:00	13:20	Paulinho 	Wallyson	local	2025-05-29 12:57:57.068	Acabamento (Pezinho)
+9189204e-229b-4bc9-bc65-bb5b96f6ef16	2025-05-29 00:00:00	13:20	Indisponivel	Bruno	Indisponivel	2025-05-29 13:30:06.352	
+3fb97f9f-2e3d-4cf7-a0c6-fb3c762859c0	2025-05-29 00:00:00	10:20	ataliba	Bruno	558182671510@s.whatsapp.net	2025-05-29 00:00:00	Barba
+a5adb44b-71ee-4c9f-aff2-cf763e477f21	2025-05-30 00:00:00	16:00	Rômulo 	Wallyson	local	2025-05-29 14:33:11.216	Cabelo
+51069a2d-03d0-40f9-bc56-844943ce5be7	2025-05-30 00:00:00	11:00	jefferson	Bruno	558197857453@s.whatsapp.net	2025-05-29 00:00:00	Cabelo
+6f492999-3dd4-4709-97a8-f93e8d6d2154	2025-05-29 00:00:00	17:20	jorge miguel	Wallyson	558197887918@s.whatsapp.net	2025-05-29 00:00:00	Cabelo
+9f42a425-1666-4177-9448-41814173aac7	2025-05-29 00:00:00	14:00	ataliba	Bruno	558182671510@s.whatsapp.net	2025-05-29 00:00:00	Barba
+5d0d0773-23b6-4de0-b830-ec355dc4051f	2025-05-31 00:00:00	18:00	samuel	Wallyson	558196448583@s.whatsapp.net	2025-05-29 00:00:00	Cabelo
+1627c24b-ce31-48d9-9622-16e9b39b08af	2025-05-29 00:00:00	14:40	Indisponivel	Bruno	Indisponivel	2025-05-29 15:48:30.852	
+3b96bf3f-e13a-4bf8-bf4b-bec2fbefbbd5	2025-05-29 00:00:00	15:20	Indisponivel	Bruno	Indisponivel	2025-05-29 15:48:30.956	
+a96d3af0-1c89-4e71-90dd-0756e79bc05c	2025-05-29 00:00:00	16:00	Indisponivel	Bruno	Indisponivel	2025-05-29 15:48:30.987	
+13d03d80-7a5b-4111-a537-d426d8a41910	2025-05-31 00:00:00	14:00	breno	Bruno	558197349442@s.whatsapp.net	2025-05-29 00:00:00	Cabelo
+bb8dc42c-80fc-4cc8-a69e-ee196acdd748	2025-05-29 00:00:00	15:20	vandinho	Wallyson	558197042471@s.whatsapp.net	2025-05-29 00:00:00	Cabelo
+7dd4f0aa-f150-47d8-865a-8f695fc4abce	2025-05-29 00:00:00	14:40	Lucas 	Wallyson	local	2025-05-29 16:34:44.529	Cabelo
+f9187fd6-87d5-464a-aeb7-32e6b7061892	2025-05-30 00:00:00	14:40	Matheus 	Wallyson	local	2025-05-29 17:04:32.353	Cabelo
+b9f2726a-ddc1-4782-9686-cc2e0659574c	2025-05-30 00:00:00	20:00	Tuti	Bruno	local	2025-05-29 17:31:42.277	Cabelo
+a2677950-ad1c-4945-b837-575a2d141191	2025-06-05 00:00:00	18:00	Indisponivel	Wallyson	Indisponivel	2025-05-29 17:32:32.92	
+f0b0c49c-b168-45c7-82fa-fed5d4ced9ff	2025-06-05 00:00:00	18:40	Indisponivel	Wallyson	Indisponivel	2025-05-29 17:32:32.983	
+5b411d2e-1520-450c-b029-629c2e72bbb7	2025-06-05 00:00:00	17:20	Marcado 	Wallyson	local	2025-05-29 17:35:09.267	Cabelo
+728be553-f9f7-4ca2-8f53-8ba3cab4ed10	2025-06-02 00:00:00	09:40	robert fernando	Bruno	558187830953@s.whatsapp.net	2025-05-29 00:00:00	Cabelo
+5798e234-f5df-4a9d-8dac-18dd1aefe6cb	2025-05-31 00:00:00	11:20	eliel	Bruno	558199867389@s.whatsapp.net	2025-05-29 00:00:00	Cabelo
+d50fcc67-70fb-4a90-91a9-6e0d0277b44d	2025-05-30 00:00:00	15:20	vinicius	Bruno	558194296929@s.whatsapp.net	2025-05-29 00:00:00	Cabelo
+2ad87c2d-9ad7-443b-870d-81369091f484	2025-05-30 00:00:00	18:00	Kauan Yuri 	Wallyson	local	2025-05-29 20:52:36.515	Cabelo
+3242dec0-4657-4974-a01b-06a318c4e3c2	2025-05-30 00:00:00	10:20	arthur sales	Bruno	558199775133@s.whatsapp.net	2025-05-29 00:00:00	Cabelo+Sobrancelha
+aed3e143-0317-4d18-adf3-9b881cbe261f	2025-05-31 00:00:00	12:00	simone	Bruno	558187145252@s.whatsapp.net	2025-05-29 00:00:00	Cabelo
+9ce8fa3e-24bd-4c5b-89a1-8460acd0a1c4	2025-06-05 00:00:00	16:00	miguel	Bruno	558198627331@s.whatsapp.net	2025-05-29 00:00:00	Cabelo+Barba
+f6465fd3-04e5-4c9a-9689-5227af0af271	2025-06-02 00:00:00	15:20	lucas rafael	Bruno	558197593200@s.whatsapp.net	2025-05-29 00:00:00	Cabelo
+cb9c7904-92bf-41f7-b58b-7f1182988c35	2025-06-10 00:00:00	16:00	romerio	Bruno	558198627331@s.whatsapp.net	2025-05-29 00:00:00	Cabelo+Barba
+22a7b079-5fc2-4b86-9fed-1ce51661c3fe	2025-06-05 00:00:00	16:40	gabriel	Bruno	558198627331@s.whatsapp.net	2025-05-29 00:00:00	Cabelo
+9bc1db06-c40b-41ac-94c4-7f939032736a	2025-05-31 00:00:00	16:00	moisés	Wallyson	558171076971@s.whatsapp.net	2025-05-29 00:00:00	Cabelo+Barba
+0ab2da16-9ab0-4ec8-9e4e-d90afa27b714	2025-05-30 00:00:00	18:40	gabriel	Wallyson	558199481850@s.whatsapp.net	2025-05-29 00:00:00	Cabelo+Sobrancelha
+e791eb3a-0076-48a7-88a6-9de09ed751ce	2025-05-30 00:00:00	16:40	deyvid jhonatan	Bruno	558199201610@s.whatsapp.net	2025-05-29 00:00:00	Cabelo
+f021267c-b83a-414f-af59-d48726d86c69	2025-06-07 00:00:00	10:00	Carlos 	Wallyson	local	2025-05-30 09:39:48.772	Cabelo
+5b17a44d-598f-436f-9fa0-1ee9664884c1	2025-05-31 00:00:00	15:20	Allysson 	Wallyson	local	2025-05-30 09:44:51.835	Cabelo
+5b5dbda8-1be9-431d-ba55-ecefffcf6410	2025-06-02 00:00:00	13:20	joão marcello	Bruno	558196393507@s.whatsapp.net	2025-05-30 00:00:00	Cabelo+Sobrancelha
+303d75a5-c0b7-4b95-9668-2b03994274b4	2025-05-30 00:00:00	09:00	josivaldo gomes de arruda	Bruno	558196887942@s.whatsapp.net	2025-05-30 00:00:00	Cabelo
+a7ea8b5c-3b38-4e46-a204-50c1524d91d5	2025-05-30 00:00:00	10:00	mathias	Wallyson	558187494403@s.whatsapp.net	2025-05-30 00:00:00	Cabelo+Barba
+79960985-e7ba-4c39-b080-af0f12787c79	2025-05-30 00:00:00	10:40	Júlio 	Wallyson	local	2025-05-30 11:52:50.553	Cabelo
+e07d331f-417d-46bd-af6c-9b7f1cf55a87	2025-05-30 00:00:00	11:20	Marcado 	Wallyson	local	2025-05-30 11:56:20.826	Cabelo
+44b959ca-b89b-4ec2-aa08-6bf8d3addd8b	2025-06-04 00:00:00	14:00	gonzaga	Bruno	558196532675@s.whatsapp.net	2025-05-30 00:00:00	Cabelo
+2d7b3c60-d7cd-47fa-93df-2c8d8701cedc	2025-05-30 00:00:00	19:20	wesley	Wallyson	558196817233@s.whatsapp.net	2025-05-30 00:00:00	Cabelo
+02ff65c1-a359-4071-8724-5327850a53e1	2025-05-31 00:00:00	13:20	jorge miguel	Wallyson	558197887918@s.whatsapp.net	2025-05-30 00:00:00	Cabelo
+f5bdbff1-bd52-4759-a565-a323d81b2a68	2025-05-31 00:00:00	11:20	marcio	Wallyson	558198973109@s.whatsapp.net	2025-05-30 00:00:00	Cabelo
+a530ab89-204e-469a-9d35-9ce3e579f3f9	2025-05-31 00:00:00	14:40	Lucas 	Wallyson	local	2025-05-30 18:45:08.151	Cabelo
+2af29f35-f061-4f18-bc59-04f885acc47a	2025-05-31 00:00:00	17:20	Fabrício 	Wallyson	local	2025-05-30 19:12:28.273	Cabelo
+683e8c06-e50a-49fb-826a-bbb138d15260	2025-05-31 00:00:00	09:20	rubens	Wallyson	558198296625@s.whatsapp.net	2025-05-30 00:00:00	Cabelo
+96f8b151-fa4f-445f-b2a8-fbde1fc55313	2025-06-06 00:00:00	15:20	joão vitor	Bruno	558192250093@s.whatsapp.net	2025-05-30 00:00:00	Cabelo
+2bbc4ae0-08a1-407a-aacd-1cc27c354fcc	2025-06-02 00:00:00	11:00	fernando	Bruno	558196035269@s.whatsapp.net	2025-05-30 00:00:00	Cabelo
+b6361962-b575-4aa9-a583-4ee5ca2ea2ec	2025-06-17 00:00:00	18:40	maicon	Bruno	558194686969@s.whatsapp.net	2025-05-30 00:00:00	Cabelo
+651974a4-cfe5-4925-a03f-f3fc1d84d2b9	2025-06-02 00:00:00	10:20	joão pedro campos	Bruno	558196073970@s.whatsapp.net	2025-05-31 00:00:00	Cabelo+Barba
+dec32d9c-766c-4104-811c-4fc45832300e	2025-05-31 00:00:00	12:00	Felipe 	Wallyson	local	2025-05-31 10:04:59.172	Cabelo
+acfdbef9-a9f3-4c33-b19f-d39061bff1ad	2025-05-31 00:00:00	16:40	Felipe Barbosa 	Wallyson	local	2025-05-31 10:07:53.796	Cabelo
+60b53287-5da9-4be9-a0ea-caf2703ebde5	2025-06-02 00:00:00	18:40	Jeferson 	Wallyson	local	2025-05-31 10:08:59.084	Cabelo+Barba
+84b0eb32-02f8-4728-a39e-a76624ff5e30	2025-05-31 00:00:00	14:00	samuel	Wallyson	558199862867@s.whatsapp.net	2025-05-31 00:00:00	Cabelo
+c4bfc9c8-67e2-4f21-ac07-59161d7d2e51	2025-06-02 00:00:00	18:40	Alyson free shopping 	Bruno	local	2025-05-31 12:29:15.144	Cabelo
+0f3e4d05-ef76-48e9-932d-80f8708ef504	2025-06-07 00:00:00	14:40	manoel neto	Bruno	558195055212@s.whatsapp.net	2025-05-31 00:00:00	Cabelo+Barba
+e37233aa-9f3c-4546-874a-4ee6b42dbf82	2025-06-02 00:00:00	14:40	joão pedro ( elma )	Bruno	558181323380@s.whatsapp.net	2025-05-31 00:00:00	Cabelo
+41a950f7-7cac-4ff0-a587-edb44d149a92	2025-06-02 00:00:00	16:00	jefferson	Bruno	558196311311@s.whatsapp.net	2025-05-31 00:00:00	Cabelo
+f3b7d94b-1332-4409-8a5e-e1d95d1a95e9	2025-06-03 00:00:00	18:40	jeferson	Wallyson	558198265483@s.whatsapp.net	2025-05-31 00:00:00	Cabelo+Barba
+85985d36-601f-4af2-a2a4-dd0abc4bf7f0	2025-06-06 00:00:00	16:40	carlos daniel do carmo santos	Bruno	558198034222@s.whatsapp.net	2025-05-31 00:00:00	Cabelo
+3494105b-4161-4eac-bc85-8ec14090ea46	2025-06-06 00:00:00	18:00	anderson	Bruno	558197666072@s.whatsapp.net	2025-05-31 00:00:00	Cabelo+Barba
+ac064ede-9c93-46e2-b7e1-34436d02484c	2025-06-02 00:00:00	11:40	gabriel nascimento	Bruno	558181670651@s.whatsapp.net	2025-05-31 00:00:00	Cabelo
+c7b12731-a4c3-440d-9c5e-79531cf07a47	2025-06-02 00:00:00	16:40	joão pedro	Bruno	558181670651@s.whatsapp.net	2025-05-31 00:00:00	Cabelo
+74a72183-2f68-4a63-b1d1-ff1995dd9572	2025-06-04 00:00:00	13:20	paulo cavalcanti	Bruno	558192692547@s.whatsapp.net	2025-05-31 00:00:00	Cabelo
+1e61d40e-a32c-4369-b8b4-6479a8fd059e	2025-06-21 00:00:00	14:00	matheus	Wallyson	558196490565@s.whatsapp.net	2025-05-31 00:00:00	Cabelo
+32bd01ac-7ae7-4d9e-bb87-a9759086600f	2025-06-07 00:00:00	09:20	luan	Bruno	558184474628@s.whatsapp.net	2025-05-31 00:00:00	Cabelo+Sobrancelha
+f3c3064a-572c-4fc4-9420-14566357a00a	2025-06-02 00:00:00	09:00	luan	Wallyson	558197092692@s.whatsapp.net	2025-05-31 00:00:00	Cabelo
+4749cc04-7ff2-4a63-a3c5-57f20b19d172	2025-06-02 00:00:00	17:20	bruno	Bruno	558197349442@s.whatsapp.net	2025-05-31 00:00:00	Cabelo
+c77782f0-8894-41ec-8553-4b328a212179	2025-06-02 00:00:00	17:20	mácio	Wallyson	558197349442@s.whatsapp.net	2025-05-31 00:00:00	Cabelo
+a42e6309-fc45-4ca8-9df2-338ec2c2fdf9	2025-06-09 00:00:00	14:00	ismael	Bruno	558199824318@s.whatsapp.net	2025-06-01 00:00:00	Cabelo
+1b88d302-b792-4a2c-8a78-04881ef9fb7f	2025-06-02 00:00:00	09:40	windney darlan	Wallyson	558187774760@s.whatsapp.net	2025-06-01 00:00:00	Cabelo
+bb2b8ecc-4954-4c25-bb99-78acb0417f98	2025-06-03 00:00:00	10:00	João do bolo 	Wallyson	local	2025-06-01 19:53:08.881	Cabelo+Sobrancelha
+78d0d5a4-9f5f-4475-ba31-2ce219b3a308	2025-06-04 00:00:00	10:20	everson	Bruno	558179003193@s.whatsapp.net	2025-06-01 00:00:00	Cabelo
+25560b54-697e-4674-9a75-d724774561be	2025-06-20 00:00:00	10:20	markinhos lopes	Bruno	558182745871@s.whatsapp.net	2025-06-01 00:00:00	Cabelo+Barba
+4bf45f6b-b4e6-41a9-85e5-39a0e27062cb	2025-06-02 00:00:00	14:00	nilton e arthur	Bruno	558199442297@s.whatsapp.net	2025-06-01 00:00:00	Cabelo
+6c660748-8bb3-4048-8f5e-73bf6a9cdeab	2025-06-07 00:00:00	09:20	cláudio henrique	Wallyson	558188482085@s.whatsapp.net	2025-06-02 00:00:00	Cabelo
+e680912a-f4bf-464f-b1be-7f8a9b351f6c	2025-06-06 00:00:00	18:40	gonzaga neto	Bruno	558198514795@s.whatsapp.net	2025-06-02 00:00:00	Cabelo
+ce09fd31-7f23-4c7b-9095-d45b1722793e	2025-06-04 00:00:00	09:00	Breno	Bruno	local	2025-06-02 10:08:42.628	Cabelo
+79466358-6c83-4f9e-baad-186b09ee16f4	2025-06-06 00:00:00	19:20	ryan	Bruno	558196680308@s.whatsapp.net	2025-06-02 00:00:00	Cabelo+Barba
+0bc33fe3-4ef8-40d2-a031-433fe8f00325	2025-06-02 00:00:00	14:40	ravi	Wallyson	558195156041@s.whatsapp.net	2025-06-02 00:00:00	Cabelo
+3ec8badf-96f9-43ab-8cce-8cb6bd8e6f25	2025-06-04 00:00:00	10:00	Indisponivel	Wallyson	Indisponivel	2025-06-02 11:03:55.846	
+2561cbd1-5adf-42d5-b4c0-065ea8099b37	2025-06-04 00:00:00	10:40	Indisponivel	Wallyson	Indisponivel	2025-06-02 11:03:55.959	
+ba19a326-26b4-472b-b7cc-e343b0508654	2025-06-04 00:00:00	11:20	Indisponivel	Wallyson	Indisponivel	2025-06-02 11:03:55.99	
+e95b7ef9-e122-473a-9c9b-0224594a9ace	2025-06-04 00:00:00	13:20	Indisponivel	Wallyson	Indisponivel	2025-06-02 11:03:56.021	
+f03b7621-897d-49dd-8eda-56c81655fd03	2025-06-04 00:00:00	14:00	Indisponivel	Wallyson	Indisponivel	2025-06-02 11:03:56.062	
+c2c90a0d-8c2b-4049-ab31-1c0c23fbe9d5	2025-06-04 00:00:00	14:40	Indisponivel	Wallyson	Indisponivel	2025-06-02 11:03:56.099	
+9441b9cc-ac8e-4654-ad47-13bb708cb8fe	2025-06-04 00:00:00	15:20	Indisponivel	Wallyson	Indisponivel	2025-06-02 11:03:56.132	
+7e0ec540-8ab4-4ba5-967a-2cb5aa042673	2025-06-04 00:00:00	16:00	Indisponivel	Wallyson	Indisponivel	2025-06-02 11:03:56.164	
+0f7e093d-a9a2-4f7f-b75c-852156c7be09	2025-06-04 00:00:00	16:40	Indisponivel	Wallyson	Indisponivel	2025-06-02 11:03:56.195	
+e0b229f0-4a43-4533-939b-a1ac950e013e	2025-06-04 00:00:00	18:00	Indisponivel	Wallyson	Indisponivel	2025-06-02 11:03:56.228	
+e9b0aeb7-7cb6-4b69-82bb-59206a635af5	2025-06-04 00:00:00	18:40	Indisponivel	Wallyson	Indisponivel	2025-06-02 11:03:56.259	
+a51f6981-9152-48b3-a935-4ea1c916fc8c	2025-06-04 00:00:00	15:20	cauã gabriel	Bruno	558199527666@s.whatsapp.net	2025-06-02 00:00:00	Cabelo
+5f6be1b7-5d2b-4416-89f6-2de5296d1194	2025-06-06 00:00:00	14:00	Heitor 	Wallyson	local	2025-06-02 12:09:30.528	Cabelo
+9abeb212-d4d4-445a-9441-e22e60231fda	2025-06-02 00:00:00	13:20	Vou corta o de Wilson 	Wallyson	local	2025-06-02 12:36:44.804	Cabelo
+8dee719c-1a53-4bb1-a741-226470d44bfc	2025-06-04 00:00:00	17:20	thomas	Bruno	558181391720@s.whatsapp.net	2025-06-02 00:00:00	Cabelo
+7f3e5c75-5c48-4b66-ba68-7d4c8137c1ea	2025-06-02 00:00:00	18:00	daniel	Wallyson	558199459046@s.whatsapp.net	2025-06-02 00:00:00	Cabelo
+f361072f-8d1c-4e44-a49e-45d3fd1feb20	2025-06-04 00:00:00	16:40	andrey	Bruno	558195342893@s.whatsapp.net	2025-06-02 00:00:00	Cabelo
+2ee25ded-2fdf-4ac7-a791-5014451a18ca	2025-06-06 00:00:00	15:20	vandro júnior	Wallyson	558196610362@s.whatsapp.net	2025-06-02 00:00:00	Cabelo
+2393c4e1-b67d-4062-9479-48c560e738d8	2025-06-02 00:00:00	14:00	Junior	Wallyson	local	2025-06-02 17:10:01.745	Cabelo+Barba
+6456e205-10dd-4b4b-83ce-f9dec71906e2	2025-06-02 00:00:00	15:20	Marcado 	Wallyson	local	2025-06-02 17:14:57.357	Cabelo
+3651ee93-b66b-4dbb-a3c6-e4eef1335963	2025-06-11 00:00:00	16:40	davi	Bruno	558197570874@s.whatsapp.net	2025-06-02 00:00:00	Cabelo+Sobrancelha
+83552628-ed75-4ba2-bf74-b2dbc393dc59	2025-06-05 00:00:00	10:00	kallebe	Wallyson	558195967163@s.whatsapp.net	2025-06-02 00:00:00	Cabelo
+26d8c894-2980-4abf-9596-77a162548666	2025-06-02 00:00:00	16:40	josé danilo do nascimento	Wallyson	558182184004@s.whatsapp.net	2025-06-02 00:00:00	Cabelo+Barba
+3c00a500-900a-427d-abad-218c86bf3e55	2025-06-02 00:00:00	16:00	Marcado 	Wallyson	local	2025-06-02 17:53:46.351	Cabelo
+8948e275-13ee-4615-98c3-d02db4eff30e	2025-06-07 00:00:00	18:00	leiliane agendamento pra ruan	Wallyson	558198371428@s.whatsapp.net	2025-06-02 00:00:00	Cabelo
+1c1b6aaa-2b24-45c6-8352-14da1bbc8843	2025-06-03 00:00:00	08:00	fernando correia da silva	Wallyson	558199732471@s.whatsapp.net	2025-06-02 00:00:00	Cabelo
+8a159de0-9215-41e8-9c5c-3639d1742d5e	2025-06-10 00:00:00	09:00	emanoel	Bruno	558181079674@s.whatsapp.net	2025-06-02 00:00:00	Sobrancelha
+81702b9f-08b3-4b5b-a4e3-2c2866a74593	2025-06-10 00:00:00	09:40	leonardo cabral	Bruno	558197413226@s.whatsapp.net	2025-06-02 00:00:00	Cabelo
+003e5d3f-59ca-4892-a5da-f953c8f10375	2025-06-04 00:00:00	11:00	andré	Bruno	558198646935@s.whatsapp.net	2025-06-02 00:00:00	Cabelo+Barba
+cb3c03ae-bf83-4f3e-a60d-b390a66f1c57	2025-06-05 00:00:00	09:00	victor alexandre	Bruno	558197610116@s.whatsapp.net	2025-06-02 00:00:00	Cabelo+Sobrancelha
+85640417-19d8-4916-a95a-688e5910dfb4	2025-06-03 00:00:00	18:00	samuel	Wallyson	558199862867@s.whatsapp.net	2025-06-02 00:00:00	Cabelo
+9361a726-6e83-429c-89da-b7e60f89ab70	2025-06-04 00:00:00	18:00	joão guilherme	Bruno	558181673375@s.whatsapp.net	2025-06-02 00:00:00	Cabelo
+f6412c5b-dded-452b-b327-36eb67fec656	2025-06-14 00:00:00	08:00	tiago	Bruno	558181319163@s.whatsapp.net	2025-06-02 00:00:00	Cabelo
+49e9a6b3-090c-4422-8d88-23af010b0d40	2025-06-04 00:00:00	18:40	denílson	Bruno	558197084296@s.whatsapp.net	2025-06-02 00:00:00	Barba
+3d025f76-8ac8-4c04-a530-b0619346de9e	2025-06-07 00:00:00	14:00	gago	Bruno	558195055274@s.whatsapp.net	2025-06-02 00:00:00	Cabelo+Sobrancelha
+9a910036-df3b-4bfd-8ca3-67abb16947c6	2025-06-06 00:00:00	11:40	pedro augusto	Bruno	558171185174@s.whatsapp.net	2025-06-03 00:00:00	Cabelo
+cd80a7f7-0b50-4ad5-b2b9-853c106300a7	2025-06-03 00:00:00	08:40	Marcado 	Wallyson	local	2025-06-03 10:09:40.805	Cabelo
+311328b7-66a2-4e76-99eb-55221e19013b	2025-06-05 00:00:00	13:20	arthur	Bruno	558194115511@s.whatsapp.net	2025-06-03 00:00:00	Cabelo+Barba
+a5583fd1-304a-41a1-9a61-3379becd1bf6	2025-06-03 00:00:00	16:00	Eraldo 	Wallyson	local	2025-06-03 11:36:55.535	Barba
+586a9de1-1f61-448e-9889-c5dacbd9caa0	2025-06-13 00:00:00	13:20	Caio 	Wallyson	local	2025-06-03 11:44:20.587	Cabelo
+fb0be003-34cc-437a-9e67-3f48407c63d8	2025-06-04 00:00:00	09:20	clarissa	Wallyson	558181358721@s.whatsapp.net	2025-06-03 00:00:00	Cabelo
+efefa389-b320-42d8-bf88-8a6b9e00a819	2025-06-03 00:00:00	16:40	fernando	Wallyson	558199732471@s.whatsapp.net	2025-06-03 00:00:00	Cabelo
+cb506221-89cd-4751-87ca-d6b578846875	2025-06-04 00:00:00	11:40	Fernando 	Bruno	local	2025-06-03 12:41:14.676	Cabelo
+f4b2e5d9-1ed4-470c-9cc4-c1253c0da893	2025-06-04 00:00:00	09:40	Fernando 	Bruno	local	2025-06-03 14:46:34.299	Cabelo
+887129f6-d858-4ab0-91fe-8405a8eea999	2025-06-17 00:00:00	17:20	Adaias 	Wallyson	local	2025-06-03 14:52:52.81	Cabelo
+3509bee3-d62c-44a5-9586-36a602b5214a	2025-06-03 00:00:00	17:20	Felipe 	Wallyson	local	2025-06-03 14:53:05.967	Cabelo+Barba
+23aa6fa5-b8a5-426e-bf3f-e43bc3e194e3	2025-06-11 00:00:00	11:40	micherlaine	Bruno	558196463146@s.whatsapp.net	2025-06-03 00:00:00	Cabelo
+bc422652-3bd9-46bb-a9e4-f8d39135002c	2025-06-05 00:00:00	13:20	horlean	Wallyson	558281363560@s.whatsapp.net	2025-06-03 00:00:00	Cabelo+Sobrancelha
+4fda45e2-7e0c-4f96-8d3e-142961c98df3	2025-06-05 00:00:00	18:00	calebe	Bruno	558196987419@s.whatsapp.net	2025-06-03 00:00:00	Cabelo
+33060ac7-79ab-4d31-8732-f75e99e24fa9	2025-06-14 00:00:00	15:20	ullisses	Bruno	558182686327@s.whatsapp.net	2025-06-03 00:00:00	Cabelo
+912f9d89-3e1e-42ec-b9c0-85a1727bb12b	2025-06-12 00:00:00	14:00	lucas josé	Bruno	558199311183@s.whatsapp.net	2025-06-03 00:00:00	Cabelo+Sobrancelha
+a881d742-d38e-46e7-ac8d-d6ec891725ec	2025-06-04 00:00:00	08:40	john	Wallyson	558196903604@s.whatsapp.net	2025-06-03 00:00:00	Cabelo+Barba
+b7c6f61c-fa53-455a-8d67-1ecf8db7916d	2025-06-07 00:00:00	08:00	wilson	Wallyson	558197148928@s.whatsapp.net	2025-06-03 00:00:00	Cabelo+Sobrancelha
+4934de48-e3ba-410c-b25d-2399da1fb860	2025-06-05 00:00:00	16:00	kauê	Wallyson	558199937689@s.whatsapp.net	2025-06-03 00:00:00	Cabelo+Sobrancelha
+2a7853e4-9ec1-48b7-9864-8a0b8e25b70b	2025-06-20 00:00:00	16:00	luis	Bruno	558199061615@s.whatsapp.net	2025-06-03 00:00:00	Cabelo+Sobrancelha
+68c684fa-7ed1-4558-9aeb-3a71f9f6a490	2025-06-04 00:00:00	08:00	fernando	Wallyson	558199732471@s.whatsapp.net	2025-06-03 00:00:00	Cabelo
+985fd493-55fe-4fc4-8caa-b7e8ce7035a5	2025-06-05 00:00:00	15:20	fernando	Bruno	558199817133@s.whatsapp.net	2025-06-03 00:00:00	Cabelo
+8a922a6d-5c1a-4e27-9ee3-0850a8d70884	2025-06-06 00:00:00	20:00	marcos	Bruno	558197149668@s.whatsapp.net	2025-06-03 00:00:00	Cabelo
+cbeaae02-1a98-4263-ad0a-446253201417	2025-06-05 00:00:00	16:40	Matheus 	Wallyson	local	2025-06-03 23:42:52.174	Cabelo
+0a799081-fbde-40c3-888f-d0db4a46e8b1	2025-06-07 00:00:00	17:20	maicon	Bruno	558194686969@s.whatsapp.net	2025-06-04 00:00:00	Cabelo
+93c44aab-44f9-401c-a68a-70cca8b0557a	2025-06-06 00:00:00	20:40 	Italo	Bruno	local	2025-06-04 10:31:07.353	Cabelo
+19f9f0c1-eefc-4013-ad52-472eebad082c	2025-06-05 00:00:00	15:20	Daniel 	Wallyson	local	2025-06-04 10:43:18.679	Cabelo
+d959406f-e19d-456d-9ea3-5b48913f10f3	2025-06-05 00:00:00	14:40	Liaderson 	Wallyson	local	2025-06-04 14:59:29.194	Cabelo
+3b66ada5-9ab2-4e7e-b87a-13cc4c02bea6	2025-06-05 00:00:00	08:40	marcos elielson	Wallyson	558195356602@s.whatsapp.net	2025-06-04 00:00:00	Cabelo+Barba
+673dda7e-d7ae-454d-b87b-afad0ca72be6	2025-06-05 00:00:00	14:00	pedro henrique santos de lima (messi)	Bruno	558199656200@s.whatsapp.net	2025-06-04 00:00:00	Cabelo+Sobrancelha
+26430d01-76ee-4115-bf1f-b705f0b3e1a5	2025-06-07 00:00:00	17:20	Ivonaldo 	Wallyson	local	2025-06-06 19:17:44.927	Cabelo
+3e398027-915c-482e-90ec-4eed8e73ca9b	2025-06-19 00:00:00	14:00	Levino 	Wallyson	local	2025-06-14 12:31:28.397	Cabelo+Barba
+1416768e-0452-4d28-9081-779dc36e6622	2025-06-14 00:00:00	14:40	Miguel 	Wallyson	local	2025-06-14 12:32:08.54	Cabelo
+f9893841-98d9-473f-8844-373783dbc5f6	2025-06-05 00:00:00	11:40	lucas santos	Bruno	558198471608@s.whatsapp.net	2025-06-04 00:00:00	Cabelo
+4fca2ffe-d600-483a-af52-2af5e034948f	2025-06-09 00:00:00	18:00	rafael melo	Bruno	558199365900@s.whatsapp.net	2025-06-04 00:00:00	Cabelo
+1222f742-c4e7-49da-8b71-f5c701da2931	2025-06-07 00:00:00	10:40	Matheus 	Wallyson	local	2025-06-04 17:25:52.712	Cabelo
+b73d1e4e-8e29-4724-8f6c-bab11d51203f	2025-06-07 00:00:00	11:20	Matheus 	Wallyson	local	2025-06-04 17:26:10.213	Cabelo
+310dae34-37a1-4832-8097-617c89baa20f	2025-06-06 00:00:00	18:00	João Pedro 	Wallyson	local	2025-06-04 17:28:26.825	Cabelo
+46a63914-648b-4b50-b123-818489a48fa2	2025-06-06 00:00:00	18:40	Paulo 	Wallyson	local	2025-06-04 17:28:59.636	Cabelo
+3ef2b80c-6816-4d37-8f33-192794d1570a	2025-06-06 00:00:00	17:20	Leandro 	Wallyson	local	2025-06-04 17:33:06.921	Cabelo+Sobrancelha
+1d1ae1bf-455b-4c49-b34f-00c9c1dff36f	2025-06-05 00:00:00	14:00	davidson	Wallyson	558199527666@s.whatsapp.net	2025-06-04 00:00:00	Cabelo+Barba
+da69b583-5137-4fc8-a423-131b34c10885	2025-06-20 00:00:00	17:20	Rodrigo 	Wallyson	local	2025-06-04 21:46:56.879	Cabelo
+6a79d240-d4c1-4d72-84fd-d6cfcda0ad75	2025-06-07 00:00:00	14:00	kayke	Wallyson	558197180683@s.whatsapp.net	2025-06-04 00:00:00	Cabelo+Barba
+aee440d2-62b4-43b5-adac-4133d69137a8	2025-06-06 00:00:00	13:20	neto	Wallyson	558382153976@s.whatsapp.net	2025-06-04 00:00:00	Cabelo+Sobrancelha
+07123034-a73e-4b42-bb63-5371ed794cb3	2025-06-06 00:00:00	09:00	lucas lucena	Bruno	558198991478@s.whatsapp.net	2025-06-04 00:00:00	Cabelo
+62f5420f-45f8-446f-9139-34708c532514	2025-06-26 00:00:00	14:00	lucas lucena	Bruno	558198991478@s.whatsapp.net	2025-06-04 00:00:00	Cabelo
+9dfe3277-481b-4ad4-9613-d275bbc104d4	2025-06-05 00:00:00	11:00	jona do grau	Bruno	558196647899@s.whatsapp.net	2025-06-04 00:00:00	Cabelo
+f059bd83-8d51-43fa-a8fc-665cd0b91d2d	2025-06-05 00:00:00	10:20	carlos antônio	Bruno	558199353492@s.whatsapp.net	2025-06-04 00:00:00	Cabelo
+9d143493-8990-44ca-b444-d5a63d2a3d97	2025-06-07 00:00:00	08:40	victor	Wallyson	558196193892@s.whatsapp.net	2025-06-05 00:00:00	Cabelo+Sobrancelha
+951fd56d-0723-4787-8ef0-406a08b41fe7	2025-06-05 00:00:00	10:40	daiane	Wallyson	558189141585@s.whatsapp.net	2025-06-05 00:00:00	Cabelo
+1e94f073-f7dc-4a6a-87fb-6738ba69f5ac	2025-06-05 00:00:00	08:00	marcelo	Wallyson	558196959169@s.whatsapp.net	2025-06-05 00:00:00	Cabelo
+7a6c2c5f-07b4-48ab-b770-f1b969251bbc	2025-06-05 00:00:00	09:40	Dorgyl 	Bruno	local	2025-06-05 10:53:01.343	Cabelo
+79c95d16-3ae9-4fb9-82cf-d798985250d6	2025-06-05 00:00:00	09:20	josé arthur	Wallyson	558194257577@s.whatsapp.net	2025-06-05 00:00:00	Cabelo
+82c6e13f-f4ec-44ce-ab26-f7192d5260ac	2025-06-06 00:00:00	08:00	Fabrício 	Wallyson	local	2025-06-05 12:26:57.137	Cabelo
+54a9febe-bc1a-4df1-8a75-a1dfea2ee43e	2025-06-05 00:00:00	11:20	Marcelo Brito 	Wallyson	local	2025-06-05 12:27:38.494	Cabelo
+a4b799c1-9a70-4672-be6e-8254e54dd412	2025-06-07 00:00:00	10:00	genildo	Bruno	558199736143@s.whatsapp.net	2025-06-05 00:00:00	Cabelo
+3066c5ad-9355-439d-b899-a56b4ff27102	2025-06-20 00:00:00	17:20	joão victor	Bruno	558196049253@s.whatsapp.net	2025-06-05 00:00:00	Cabelo+Sobrancelha
+94179465-a86c-4aee-9f5c-a3cc04622dab	2025-06-07 00:00:00	10:40	matheus	Bruno	558196191710@s.whatsapp.net	2025-06-05 00:00:00	Cabelo+Sobrancelha
+ffd46150-abbb-4f8f-9e71-ec2bf98c6cea	2025-06-06 00:00:00	10:40	Alan	Wallyson	local	2025-06-05 13:17:43.285	Cabelo
+3512d7f3-a52b-4045-949a-e88a9be8af98	2025-06-06 00:00:00	11:00	paulo césar	Bruno	558182758461@s.whatsapp.net	2025-06-05 00:00:00	Cabelo
+7f51349d-0451-454e-822f-62b0600ad063	2025-06-06 00:00:00	08:40	Jhonatta 	Wallyson	local	2025-06-05 13:44:47.199	Cabelo
+60d526d5-7294-42ec-ab47-80ccbf0971bd	2025-06-06 00:00:00	09:40	josé rafael	Bruno	558199670797@s.whatsapp.net	2025-06-05 00:00:00	Cabelo
+6ade8b24-c738-4111-b4e6-2a327a4eb257	2025-06-07 00:00:00	11:20	iann lucas	Bruno	558196612255@s.whatsapp.net	2025-06-05 00:00:00	Cabelo+Sobrancelha
+664ab2a7-93dd-43eb-8b55-baeddc618ff0	2025-06-06 00:00:00	10:20	henrique	Bruno	558182601936@s.whatsapp.net	2025-06-05 00:00:00	Cabelo
+fa5386dc-ae05-4282-b4cb-b0ef4095aa7e	2025-06-09 00:00:00	13:20	joão lucas	Bruno	558182601936@s.whatsapp.net	2025-06-05 00:00:00	Cabelo
+28007388-fa9f-41a7-8c44-f48dd295d31e	2025-06-09 00:00:00	14:40	heitor	Bruno	558182601936@s.whatsapp.net	2025-06-05 00:00:00	Cabelo
+e5d688e7-6495-4e16-aa22-8a7b11152dea	2025-06-06 00:00:00	09:20	Marcado 	Wallyson	local	2025-06-05 18:19:01.128	Cabelo
+b8bf93d6-121c-4899-8196-96ec39bbc4c5	2025-06-12 00:00:00	17:20	Sindolfo	Wallyson	local	2025-06-05 19:11:18.33	Cabelo+Sobrancelha
+76f85835-7f11-4380-9cee-79fd6e2e3d0b	2025-06-20 00:00:00	11:20	Sindolfo	Wallyson	local	2025-06-05 19:11:55.963	Cabelo
+443dbac0-28c4-4039-8f7d-01b9b47dbd56	2025-06-09 00:00:00	17:20	pedro henrique	Wallyson	558195071416@s.whatsapp.net	2025-06-05 00:00:00	Cabelo+Sobrancelha
+963a9e94-9c98-4dad-bee1-3701a8a79930	2025-06-07 00:00:00	14:40	noah	Wallyson	558196533335@s.whatsapp.net	2025-06-05 00:00:00	Cabelo
+a859aa71-4b1e-414f-8781-0a7851b0360d	2025-06-09 00:00:00	15:20	paulo henrique	Bruno	558174004953@s.whatsapp.net	2025-06-05 00:00:00	Cabelo+Sobrancelha
+b584bf20-6135-4421-ada8-20369a012c29	2025-06-07 00:00:00	12:00	Adaias 	Wallyson	local	2025-06-05 21:44:31.971	Cabelo
+ae401e56-bbb1-4ec0-a6da-55f1fdefeff1	2025-06-07 00:00:00	13:20	Adaias 	Wallyson	local	2025-06-05 21:48:06.212	Cabelo
+5e3d1bc6-d9e7-4192-9b8f-7d799d83619c	2025-06-06 00:00:00	11:20	mathias	Wallyson	558187494403@s.whatsapp.net	2025-06-05 00:00:00	Barba
+e473977c-0758-431e-aa17-098f80667dd3	2025-06-07 00:00:00	16:00	júlio	Wallyson	558196192233@s.whatsapp.net	2025-06-05 00:00:00	Cabelo
+30498a4e-9f85-41e1-97ac-9fc2eba6658e	2025-06-06 00:00:00	10:00	vinicius	Wallyson	558199577658@s.whatsapp.net	2025-06-05 00:00:00	Cabelo
+7677a31a-b0a7-48bd-ab2a-ff8a5c0debf9	2025-06-09 00:00:00	16:00	pedro	Bruno	558181416722@s.whatsapp.net	2025-06-05 00:00:00	Cabelo
+f5c95379-9e74-41f7-8464-8517e997ff2f	2025-06-09 00:00:00	17:20	tarcísio	Bruno	558185887456@s.whatsapp.net	2025-06-05 00:00:00	Cabelo
+d7a02ddd-735f-4c26-a519-0f9c80f7b8cd	2025-06-06 00:00:00	16:40	fernando	Wallyson	558197789968@s.whatsapp.net	2025-06-05 00:00:00	Cabelo
+3004955d-9c41-4f85-8224-5d4d72893436	2025-06-09 00:00:00	11:40	luiz felipe barbosa da silva nunes	Bruno	558197441313@s.whatsapp.net	2025-06-06 00:00:00	Cabelo
+4aa02bf8-d430-4be5-a7bd-f0752d0053cb	2025-06-06 00:00:00	19:20	eduardo	Wallyson	558198079679@s.whatsapp.net	2025-06-06 00:00:00	Cabelo
+2c56fcc3-0b2c-438e-900c-f266c0e41c1f	2025-06-10 00:00:00	18:00	carlos	Bruno	558197823796@s.whatsapp.net	2025-06-06 00:00:00	Cabelo+Sobrancelha
+50aa63e1-5f80-4c1c-9939-0dafdd5c8d66	2025-06-06 00:00:00	14:40	luan	Wallyson	558196003977@s.whatsapp.net	2025-06-06 00:00:00	Cabelo+Sobrancelha
+80fa4fc1-b5a9-4cf3-9bb3-7090ce26181f	2025-06-06 00:00:00	20:00	Luan 	Wallyson	local	2025-06-06 18:26:52.08	Acabamento (Pezinho)
+ac872031-07a2-40e7-8aea-e6b3f538690f	2025-06-12 00:00:00	16:00	anderson	Bruno	558198694494@s.whatsapp.net	2025-06-06 00:00:00	Cabelo
+7e035c8e-ae5c-4cb2-99da-496dd0a43e7d	2025-06-12 00:00:00	16:40	andrew	Bruno	558198694494@s.whatsapp.net	2025-06-06 00:00:00	Cabelo
+fc30f436-43aa-40ff-8854-caf8c2e86fb7	2025-06-13 00:00:00	16:40	leonardo botox	Bruno	558174001016@s.whatsapp.net	2025-06-06 00:00:00	Cabelo
+88be13c2-1c29-4d6d-a702-dc29c3efb2e4	2025-06-11 00:00:00	17:20	antônio henrique	Bruno	558197083657@s.whatsapp.net	2025-06-06 00:00:00	Cabelo+Sobrancelha
+5aae3d22-9a71-4fa0-a488-3e46b39d4867	2025-06-20 00:00:00	14:00	Ruan 	Wallyson	local	2025-06-07 00:14:15.683	Cabelo
+e3a479aa-9a79-491c-b8f2-58b264064af3	2025-06-09 00:00:00	16:40	Flavio 	Wallyson	local	2025-06-07 00:55:30.872	Cabelo
+2a6dc87c-7290-49a3-896b-22e2dd1f269a	2025-06-10 00:00:00	17:20	Lucas ( Bruna ) 	Bruno	local	2025-06-07 10:54:16.114	Cabelo
+354ad910-d16a-4daa-846b-438248216343	2025-06-13 00:00:00	11:40	pedro arthur	Bruno	558182599443@s.whatsapp.net	2025-06-07 00:00:00	Cabelo
+52669dcc-16b2-4daa-ae53-a670be3e208f	2025-06-17 00:00:00	14:00	mateus barbosa	Bruno	558197626344@s.whatsapp.net	2025-06-07 00:00:00	Cabelo
+39a0a8e9-c93d-4d8c-8fa2-aaa800cea974	2026-06-09 00:00:00	18:40	yallison	Bruno	558198734964@s.whatsapp.net	2025-06-07 00:00:00	Cabelo+Barba
+141129f8-a079-404d-a6df-e3e4aa8bb46b	2025-06-11 00:00:00	15:20	Gelson 	Wallyson	local	2025-06-07 16:12:22.939	Cabelo
+d106f6b0-f2d8-4d18-82ae-453e2c3f3be5	2025-06-11 00:00:00	08:00	Matheus 	Wallyson	local	2025-06-07 16:13:23.482	Cabelo
+9d43cdb7-f107-4eb8-8e57-8360824c7714	2025-06-20 00:00:00	16:40	Kayke 	Wallyson	local	2025-06-07 17:00:31.701	Cabelo+Barba
+f55091c3-954b-4503-9515-496edfb9d289	2025-06-13 00:00:00	18:40	heytor	Bruno	558197714625@s.whatsapp.net	2025-06-07 00:00:00	Cabelo+Barba
+93fe0f02-8d89-45c2-93ec-7863263c8e31	2025-06-09 00:00:00	16:00	rafael	Wallyson	558188763249@s.whatsapp.net	2025-06-07 00:00:00	Cabelo
+ef582c6e-5a9d-4db8-9766-b5a4cc5823d1	2025-06-12 00:00:00	11:20	Davi 	Wallyson	local	2025-06-07 19:24:23.994	Cabelo
+78c374bb-c442-4109-9f77-07eccaa391bd	2025-06-14 00:00:00	16:40	zaldinho	Bruno	558198591039@s.whatsapp.net	2025-06-07 00:00:00	Cabelo
+cc15a0f8-53ed-426a-8113-8a32237669e1	2025-06-09 00:00:00	09:40	heitor	Bruno	558196988755@s.whatsapp.net	2025-06-07 00:00:00	Cabelo
+e86480e3-770d-41da-9af5-b11410373741	2025-06-09 00:00:00	09:00	Flavio 	Wallyson	local	2025-06-07 22:03:30.497	Cabelo
+0ebe7d94-5cc6-4e83-a0d8-06957792f88c	2025-06-11 00:00:00	09:00	renan silva	Bruno	558199185971@s.whatsapp.net	2025-06-07 00:00:00	Cabelo
+9efaed63-e69b-4f1e-97fc-01d1e07daee8	2025-06-26 00:00:00	15:20	marlon	Bruno	558185124815@s.whatsapp.net	2025-06-08 00:00:00	Cabelo
+721df41c-a4d4-44cc-89f1-a20e1960ded6	2025-06-09 00:00:00	15:20	ronnye	Wallyson	558198353903@s.whatsapp.net	2025-06-08 00:00:00	Cabelo
+cc4e775d-5fc1-4350-9409-309a14954c11	2025-06-11 00:00:00	14:00	kevin	Wallyson	558195204685@s.whatsapp.net	2025-06-08 00:00:00	Cabelo
+0c53e42f-e4d3-4f0a-8693-3f5f15e637ae	2025-06-09 00:00:00	09:40	natacha	Wallyson	558197947166@s.whatsapp.net	2025-06-08 00:00:00	Cabelo
+4f46bf48-0232-41e3-b233-7d410648545b	2025-06-09 00:00:00	18:40	felipe	Wallyson	558181451150@s.whatsapp.net	2025-06-08 00:00:00	Cabelo+Sobrancelha
+a036c691-b80b-49e6-9a24-fa203fc6e552	2025-06-09 00:00:00	10:20	adson	Bruno	558195002521@s.whatsapp.net	2025-06-08 00:00:00	Cabelo
+7da2de9f-bf28-4063-87d1-393edfc74eb9	2025-06-21 00:00:00	17:20	erick vinícius	Bruno	558195786256@s.whatsapp.net	2025-06-08 00:00:00	Cabelo+Sobrancelha
+0cf11e1d-998d-47af-8a0c-02a5b3dfa4bf	2025-06-16 00:00:00	14:00	connor mcgregor	Bruno	558197279446@s.whatsapp.net	2025-06-08 00:00:00	Cabelo+Sobrancelha
+6aa21de9-0c47-4d23-8641-74e72098c9c5	2025-06-10 00:00:00	10:20	pedro henrique	Bruno	558198446899@s.whatsapp.net	2025-06-08 00:00:00	Cabelo
+904063be-0edb-469c-a5c1-84e192600880	2025-06-11 00:00:00	18:00	thomas	Bruno	558181391720@s.whatsapp.net	2025-06-08 00:00:00	Cabelo
+f3cb84ef-b90c-4e0c-8aed-a56f9676c160	2025-06-09 00:00:00	11:40	levi gabriel	Wallyson	558199292453@s.whatsapp.net	2025-06-08 00:00:00	Cabelo
+360aeda3-6239-441f-a572-f66fc2bad378	2025-06-14 00:00:00	10:00	wesley gonçalves	Bruno	558196817233@s.whatsapp.net	2025-06-08 00:00:00	Cabelo
+d43b7f5b-d14b-4f9b-aec0-9e622424fe55	2025-06-11 00:00:00	16:00	ryan	Wallyson	5511959620317@s.whatsapp.net	2025-06-08 00:00:00	Cabelo+Sobrancelha
+e8be2228-aab9-4774-98e9-0e5e126e5584	2025-06-11 00:00:00	13:20	bruno	Bruno	558189873832@s.whatsapp.net	2025-06-09 00:00:00	Cabelo+Barba
+a6c809ff-c5a9-4087-938e-0a70353e8d70	2025-06-11 00:00:00	13:20	guilherme menezes	Wallyson	558195021216@s.whatsapp.net	2025-06-09 00:00:00	Cabelo
+02906f5a-4c11-4049-a4c6-4e99c6fa39c9	2025-06-11 00:00:00	16:00	joão gabriel	Bruno	558195216795@s.whatsapp.net	2025-06-09 00:00:00	Cabelo
+dcc29558-154d-430b-a036-4c4dc9d2266d	2025-06-11 00:00:00	15:20	miguel	Bruno	558195712225@s.whatsapp.net	2025-06-09 00:00:00	Cabelo
+d9f26cb4-728d-42fc-b740-9301940b8df3	2025-06-11 00:00:00	14:00	matheus	Bruno	558196073942@s.whatsapp.net	2025-06-09 00:00:00	Cabelo+Barba
+d4a3a00d-7e72-4929-8580-d9d50c149c29	2025-06-10 00:00:00	18:40	Vaninho 	Wallyson	local	2025-06-09 14:11:49.765	Cabelo+Barba
+93b94d00-f70e-4231-906f-668fa52a17c4	2025-06-10 00:00:00	18:40	dr.marcos araújo.	Bruno	558191284429@s.whatsapp.net	2025-06-09 00:00:00	Cabelo
+8856ab82-6431-4b0e-aac4-0c7321a76a7d	2025-06-09 00:00:00	13:20	francisco	Wallyson	558182062970@s.whatsapp.net	2025-06-09 00:00:00	Cabelo
+838c9b01-e255-4d8c-a91e-4a6d118da98c	2025-06-09 00:00:00	18:00	eduardo	Wallyson	558194699903@s.whatsapp.net	2025-06-09 00:00:00	Cabelo
+bff6f6eb-fb4e-4fdf-bcff-0ae272b72b2e	2025-06-10 00:00:00	16:00	arthur aguiar	Wallyson	558196000246@s.whatsapp.net	2025-06-09 00:00:00	Cabelo
+126f5bcd-7420-4ffb-a13d-b59ce9b1aa65	2025-06-14 00:00:00	08:00	wesley	Wallyson	558181016662@s.whatsapp.net	2025-06-09 00:00:00	Cabelo+Sobrancelha
+609b939e-d26d-464e-a9c8-fa0feae30364	2025-06-09 00:00:00	14:40	Marcado 	Wallyson	local	2025-06-09 16:13:25.519	Cabelo
+b4cba6eb-ba51-4751-a16a-d86ad67d9b71	2025-06-09 00:00:00	14:00	Paulo 	Wallyson	local	2025-06-09 16:14:02.105	Cabelo
+e5497da0-f891-4789-9d50-f29d4523c8c1	2025-06-13 00:00:00	14:40	ítalo	Bruno	558195671075@s.whatsapp.net	2025-06-09 00:00:00	Cabelo
+1c56dd97-be2d-457c-83d8-37efec3ddbb7	2025-06-13 00:00:00	14:40	weliton	Wallyson	558196789894@s.whatsapp.net	2025-06-09 00:00:00	Cabelo
+51eecfe4-635e-4a5f-8662-f8bcebe55697	2025-06-10 00:00:00	16:40	guilherme	Bruno	558195949285@s.whatsapp.net	2025-06-09 00:00:00	Cabelo
+382659d9-b7b7-40e0-b16f-34f9a009b511	2025-06-10 00:00:00	10:00	Galdino	Wallyson	local	2025-06-09 16:31:37.481	Cabelo
+2b1251c8-17c5-42b5-82f0-3152bdcffa5e	2025-06-17 00:00:00	11:00	matheus	Bruno	558199843332@s.whatsapp.net	2025-06-09 00:00:00	Cabelo
+a269322d-2806-4309-977f-f6c46f7599a7	2025-06-10 00:00:00	18:00	Allysson 	Wallyson	local	2025-06-09 17:42:49.474	Cabelo
+7611a8c2-3625-48dd-a4cc-a85036ad60c7	2025-06-09 00:00:00	16:40	O upado	Bruno	local	2025-06-09 18:26:17.443	Cabelo
+0bbddd36-b5e5-4dcb-9f28-04a3d399c542	2025-06-10 00:00:00	17:20	erick	Wallyson	558199045127@s.whatsapp.net	2025-06-09 00:00:00	Cabelo
+d635a537-1418-46a1-8275-1f29f1287050	2025-06-10 00:00:00	08:00	caio césar 👶🏻	Wallyson	558197520499@s.whatsapp.net	2025-06-09 00:00:00	Cabelo
+b68264ce-2ce9-4859-904d-c81ac5020ade	2025-06-13 00:00:00	19:20	fernando	Bruno	558199948217@s.whatsapp.net	2025-06-09 00:00:00	Cabelo
+c1fac0ea-d63c-42f3-a42d-27441f78a6f2	2025-06-12 00:00:00	17:20	denilson	Bruno	558197084296@s.whatsapp.net	2025-06-09 00:00:00	Cabelo+Barba
+160ad5ff-2e66-45af-bc79-c483caf83931	2025-06-13 00:00:00	20:00	fillipe	Bruno	558192151856@s.whatsapp.net	2025-06-09 00:00:00	Cabelo+Sobrancelha
+3e813f30-2a61-447c-be52-d373f7ce259a	2025-06-12 00:00:00	14:40	fabiano	Bruno	558194610556@s.whatsapp.net	2025-06-09 00:00:00	Cabelo+Barba
+86096523-7dd6-459d-a76f-ce6e5e0a85e4	2025-06-11 00:00:00	18:40	Letícia 	Wallyson	local	2025-06-09 22:45:56.311	Cabelo
+5b410e76-9a42-41b2-8438-755b7fb13aa7	2025-06-12 00:00:00	11:40	alex	Bruno	558198874006@s.whatsapp.net	2025-06-09 00:00:00	Cabelo+Barba
+e5ca54d1-bcf1-4ba1-845f-f56e77bff0e0	2025-06-17 00:00:00	18:00	ewerton adryan	Bruno	558198289810@s.whatsapp.net	2025-06-09 00:00:00	Cabelo
+c6e271cd-b7f2-4e0a-afff-5f35f853c6a0	2025-06-11 00:00:00	09:40	ian holanda	Bruno	558179005726@s.whatsapp.net	2025-06-09 00:00:00	Cabelo
+8cb66bf8-a622-4102-b706-6d4cb66804ea	2025-06-21 00:00:00	08:40	márcio	Wallyson	558199069172@s.whatsapp.net	2025-06-10 00:00:00	Cabelo
+d9867819-6337-4077-9e61-f4a0d3199114	2025-06-14 00:00:00	14:00	Márcia 	Bruno	local	2025-06-10 11:10:31.698	Cabelo
+64f90335-2b9b-402f-b183-9e7896f2abc0	2025-06-11 00:00:00	11:00	mayrlon	Bruno	558196600679@s.whatsapp.net	2025-06-10 00:00:00	Cabelo+Sobrancelha
+37af2ff3-40ff-4f13-8b3f-4a7bfc5f39ed	2025-06-10 00:00:00	14:00	Miguel 	Wallyson	local	2025-06-10 13:24:01.54	Cabelo
+de9942ac-445f-4943-8724-2d41541bcbad	2025-06-10 00:00:00	15:20	livio	Bruno	558195436268@s.whatsapp.net	2025-06-10 00:00:00	Barba
+1098dd32-e981-4b95-9517-8e8157a672b9	2025-06-10 00:00:00	14:40	theo aguiar	Bruno	558198739294@s.whatsapp.net	2025-06-10 00:00:00	Cabelo
+1bd2b243-223b-497b-ba19-c7d926c78e9f	2025-06-16 00:00:00	18:00	joão paulo	Wallyson	558182158768@s.whatsapp.net	2025-06-10 00:00:00	Cabelo
+23ae142d-d922-49e4-89b9-612cc6423288	2025-06-16 00:00:00	16:00	flávio	Bruno	5511992553806@s.whatsapp.net	2025-06-10 00:00:00	Cabelo
+dea94ff5-67bb-436f-ad1d-30b5ff239fd2	2025-06-12 00:00:00	13:20	breno	Bruno	558198437880@s.whatsapp.net	2025-06-10 00:00:00	Cabelo+Sobrancelha
+0f4f99f0-2033-4d77-8afe-c95cc58c653b	2025-06-11 00:00:00	18:00	Davi 	Wallyson	local	2025-06-10 18:13:10.347	Cabelo
+ae42d8ea-023c-4f26-922b-2a15ce6e15eb	2025-06-13 00:00:00	17:20	pedro henrique	Bruno	558199160082@s.whatsapp.net	2025-06-10 00:00:00	Cabelo
+f5a50f54-72cb-4046-ac39-f48428c622c1	2025-06-13 00:00:00	08:00	Paulinho 	Wallyson	local	2025-06-10 20:00:11.05	Acabamento (Pezinho)
+e1520329-d690-4857-bcd2-fc4de75752af	2025-06-11 00:00:00	17:20	Paulo 	Wallyson	local	2025-06-10 20:09:36.026	Cabelo
+2809bcf9-5313-4241-b9aa-4117747c91b1	2025-06-12 00:00:00	16:00	nilson fonseca	Wallyson	558189252475@s.whatsapp.net	2025-06-10 00:00:00	Cabelo
+6ae8c3a9-f0aa-493c-a3e3-6029833cc42f	2025-06-12 00:00:00	15:20	josé anthony	Wallyson	558189252475@s.whatsapp.net	2025-06-10 00:00:00	Cabelo
+d6cb4f43-8a24-488f-8569-2c39d1a309d4	2025-06-13 00:00:00	16:40	Noa	Wallyson	local	2025-06-10 21:47:07.705	Cabelo
+27bc17cd-e373-4cb1-a77b-13a5a4fdb6c0	2025-06-12 00:00:00	09:00	adelson lopes	Bruno	558181524707@s.whatsapp.net	2025-06-10 00:00:00	Cabelo
+8d84f626-6168-4c36-aa5e-fe7155583f98	2025-06-11 00:00:00	14:40	Bruno ( Fernanda ) 	Wallyson	local	2025-06-10 21:56:09.906	Cabelo+Sobrancelha
+76fe5eb2-cefb-4645-8b04-582cdcb8b3bd	2025-06-21 00:00:00	10:40	henrique segundo	Bruno	558199224958@s.whatsapp.net	2025-06-10 00:00:00	Cabelo
+920c6d64-11c3-4662-aeb5-d4c152ac40aa	2025-06-12 00:00:00	18:40	Indisponivel	Bruno	Indisponivel	2025-06-10 22:56:33.813	
+d191879b-ff38-4cde-ba44-e5f8093364c5	2025-06-13 00:00:00	09:40	elysson	Bruno	558199697267@s.whatsapp.net	2025-06-10 00:00:00	Cabelo+Sobrancelha
+f79e1375-749f-456f-98f9-1010e468474b	2025-06-14 00:00:00	09:20	mathias lima	Wallyson	558187494403@s.whatsapp.net	2025-06-10 00:00:00	Cabelo+Barba
+a401b157-d9cd-4d87-a901-bd1dfa32bb58	2025-06-18 00:00:00	18:00	emanuel	Wallyson	558196314532@s.whatsapp.net	2025-06-10 00:00:00	Cabelo
+c1d535de-561c-4ce4-b142-92c97039151a	2025-06-18 00:00:00	17:20	hugo	Wallyson	558197524355@s.whatsapp.net	2025-06-10 00:00:00	Cabelo
+ff711ff7-1741-41fc-bc5d-f70aaa6fcad1	2025-06-11 00:00:00	14:40	joão neto	Bruno	558197626118@s.whatsapp.net	2025-06-10 00:00:00	Cabelo
+e25a449b-c869-4253-8f4d-e8693c6f3827	2025-06-19 00:00:00	10:00	Allison Daniel 	Wallyson	local	2025-06-11 10:26:15.176	Cabelo
+ff086754-8dd4-49a4-8c74-3ff101878db8	2025-06-11 00:00:00	08:40	Marcado 	Wallyson	local	2025-06-11 10:55:16.44	Cabelo
+a73cafa0-08e4-4587-a096-dab3cded27af	2025-06-11 00:00:00	10:20	elysson	Bruno	558199697267@s.whatsapp.net	2025-06-11 00:00:00	Cabelo+Sobrancelha
+8687a9ef-a695-473d-ae62-39b2b03d6934	2025-06-12 00:00:00	14:00	Walyson 	Wallyson	local	2025-06-11 13:03:14.6	Cabelo
+d8ab08fc-0701-466d-b74f-b973d5cd61ac	2025-06-12 00:00:00	14:40	Walyson 	Wallyson	local	2025-06-11 13:03:32.464	Cabelo
+bea78eba-42cf-44bd-8741-ff23c349ba9b	2025-06-12 00:00:00	10:00	Álvaro 	Wallyson	local	2025-06-11 14:11:54.947	Cabelo
+d1d0f4ec-248c-4a3f-8a8a-63dc159dacde	2025-06-11 00:00:00	16:40	Alberto 	Wallyson	local	2025-06-11 14:51:50.051	Cabelo
+ce7872d6-1618-4dc2-ac78-dfb53d4ee6ec	2025-06-21 00:00:00	12:00	mateus	Bruno	558196083218@s.whatsapp.net	2025-06-11 00:00:00	Cabelo+Barba
+2e98bc01-e5fd-4cd9-9a1b-98c787f4269f	2025-06-13 00:00:00	15:20	anderson	Bruno	558197666072@s.whatsapp.net	2025-06-11 00:00:00	Barba
+91206bca-df13-4053-bdea-c03d3b0fa109	2025-06-14 00:00:00	10:40	marcus	Bruno	558198507164@s.whatsapp.net	2025-06-11 00:00:00	Cabelo
+6cc6d270-2dca-450d-bef3-d8060692a0be	2025-06-16 00:00:00	18:40	rennan	Bruno	558196502964@s.whatsapp.net	2025-06-11 00:00:00	Cabelo
+93536945-a014-4c1c-a854-3856e8d277bd	2025-06-12 00:00:00	09:40	miguel	Bruno	558195712225@s.whatsapp.net	2025-06-11 00:00:00	Cabelo
+27969677-4e2b-420a-bb94-2257a70994b0	2025-06-13 00:00:00	16:00	fernando	Wallyson	558197789968@s.whatsapp.net	2025-06-11 00:00:00	Cabelo
+a5cd68c0-e47d-4ce8-b067-e4a87a82b433	2025-06-12 00:00:00	10:40	Matheus 	Wallyson	local	2025-06-11 20:19:50.342	Barba
+fdcf9df0-6a45-4e6c-bc58-4ae5c4ae4b7c	2025-06-17 00:00:00	11:40	sid	Bruno	558191536718@s.whatsapp.net	2025-06-11 00:00:00	Cabelo+Sobrancelha
+a254f144-3dcc-4c9a-b85b-d58b12e9bec4	2025-06-12 00:00:00	10:20	Ocupado 	Bruno	local	2025-06-12 01:50:49.671	Cabelo
+5b285496-cc2a-4434-ab3e-f714671525f3	2025-06-12 00:00:00	11:00	joão danielson	Bruno	558196702254@s.whatsapp.net	2025-06-12 00:00:00	Cabelo+Barba
+22e3becf-f5b8-4ca9-8815-052d735895f0	2025-06-13 00:00:00	10:00	Natan 	Wallyson	local	2025-06-12 04:29:08.548	Cabelo
+cc38fbe5-2fa4-46eb-9daa-d97f10f0b347	2025-06-13 00:00:00	14:00	Wanderson 	Wallyson	local	2025-06-12 04:36:50.229	Cabelo
+ed0f1c4f-b163-4fe7-9a3b-c42d2173a21e	2025-06-12 00:00:00	13:20	João Felipe 	Wallyson	local	2025-06-12 04:43:22.701	Cabelo
+a0ee8daa-b9af-4b2b-bd6e-0389606593ac	2025-06-14 00:00:00	11:20	joão vitor	Bruno	558188511046@s.whatsapp.net	2025-06-12 00:00:00	Cabelo
+806a948d-c94c-4b95-b591-dcea17f062cb	2025-06-12 00:00:00	08:40	Indisponivel	Wallyson	Indisponivel	2025-06-12 11:22:00.265	
+d9dfca51-b714-495d-9a23-1c8f5aa33233	2025-06-12 00:00:00	09:20	Indisponivel	Wallyson	Indisponivel	2025-06-12 11:22:00.354	
+ef0087cf-55c4-4b07-9449-fabb4c3642cd	2025-06-13 00:00:00	11:20	ryan	Wallyson	558199792268@s.whatsapp.net	2025-06-12 00:00:00	Cabelo
+71dab59d-f797-4a18-adfa-fa2d81139176	2025-06-12 00:00:00	15:20	João Danielson 	Bruno	local	2025-06-12 14:28:02.987	Cabelo
+23caadc1-5f86-4ba8-a70c-f3e3b785f6c7	2025-06-12 00:00:00	16:40	carlos	Wallyson	558199700555@s.whatsapp.net	2025-06-12 00:00:00	Cabelo
+59eb1e8f-db8c-48b0-a792-dd0d51d485d7	2025-06-23 00:00:00	17:20	lucas da silva	Bruno	558188204134@s.whatsapp.net	2025-06-12 00:00:00	Cabelo
+8055c21f-d28e-443e-9832-c60e82bc846e	2025-06-23 00:00:00	16:40	joão vitor	Bruno	558192250093@s.whatsapp.net	2025-06-12 00:00:00	Cabelo
+6615e2ca-6de2-4d73-b4c9-ca1a9b070a22	2025-06-13 00:00:00	15:20	Natan 	Wallyson	local	2025-06-12 18:01:10.402	Cabelo
+cd30d542-1ac5-47a5-87ec-3dafd6e41b39	2025-06-13 00:00:00	14:00	allan	Bruno	558197352705@s.whatsapp.net	2025-06-12 00:00:00	Cabelo
+05996dd2-4633-41cc-8be1-ce3b1badc8b0	2025-06-18 00:00:00	18:40	gustavo	Wallyson	558199587573@s.whatsapp.net	2025-06-12 00:00:00	Cabelo+Sobrancelha
+0e0d17c4-b8e8-4d7e-a392-18a2dd80b78f	2025-06-13 00:00:00	10:20	hatus	Bruno	558199706416@s.whatsapp.net	2025-06-12 00:00:00	Cabelo+Barba
+a9249b4d-0df0-4bce-81ce-2a2f80d6864c	2025-06-23 00:00:00	09:40	deyvid jhonatan	Bruno	558199201610@s.whatsapp.net	2025-06-13 00:00:00	Cabelo
+2da18c09-3180-4708-9b78-fcf601464b2c	2025-06-13 00:00:00	13:20	joaquim	Bruno	558199642761@s.whatsapp.net	2025-06-13 00:00:00	Cabelo
+b43dab34-a0ba-491c-9dc5-56c82a7cd1e6	2025-06-13 00:00:00	08:40	Marcado 	Wallyson	local	2025-06-13 10:57:25.279	Cabelo
+cd9095eb-33ed-416b-bc7d-0025cd14ea94	2025-06-20 00:00:00	10:40	Paulinho 	Wallyson	local	2025-06-13 11:59:00.944	Cabelo
+fee8c29c-9793-482e-90b5-c0d035d2c2f7	2025-06-14 00:00:00	10:00	Cleiton 	Wallyson	local	2025-06-13 12:04:15.319	Cabelo
+8a8e83a9-4672-430d-aea3-046559f7e297	2025-06-14 00:00:00	10:00	Cleiton 	Wallyson	local	2025-06-13 12:04:16.425	Cabelo
+e3ff7d1c-7c94-401c-8023-9b59597a0432	2025-06-13 00:00:00	20:00	Miguel 	Wallyson	local	2025-06-13 13:41:43.085	Cabelo
+51349267-4373-474d-90df-697c66f5892e	2025-06-13 00:00:00	18:00	Ze véi 	Wallyson	local	2025-06-13 13:47:06.9	Cabelo
+874579c6-9f6f-45ee-bdd7-646d2b76efb0	2025-06-13 00:00:00	19:20	Victor 	Wallyson	local	2025-06-13 14:13:53.701	Barba
+cc49a39d-f57c-4067-a2fa-fc02f704d7b9	2025-06-20 00:00:00	19:20	Victor 	Wallyson	local	2025-06-13 14:16:05.161	Cabelo+Barba
+f720254c-6e95-4fda-9fd9-c6196c5e38b9	2025-06-20 00:00:00	20:00	João Henrique 	Wallyson	local	2025-06-13 14:16:20.798	Cabelo
+fc50a8d1-507f-4212-9351-d88dde781741	2025-06-18 00:00:00	14:40	Indisponivel	Wallyson	Indisponivel	2025-06-13 14:20:14.285	
+507df6ba-d1b6-4fed-aa61-77090dea95e1	2025-06-18 00:00:00	15:20	Indisponivel	Wallyson	Indisponivel	2025-06-13 14:20:14.598	
+49cd29a0-cca2-4eae-a0cc-57fe397ad5c2	2025-06-18 00:00:00	16:00	Indisponivel	Wallyson	Indisponivel	2025-06-13 14:20:14.632	
+d48e530c-7d47-465f-948a-867f6562b3bc	2025-06-18 00:00:00	16:40	Indisponivel	Wallyson	Indisponivel	2025-06-13 14:20:14.666	
+7d6180bd-a001-41c3-96a6-e0130fbde0cf	2025-06-21 00:00:00	09:20	Hatus	Bruno	local	2025-06-13 14:25:03.465	Barba
+140882f0-4d40-4ff9-80b4-538235b053d8	2025-06-17 00:00:00	11:20	gabriel	Wallyson	558196106906@s.whatsapp.net	2025-06-13 00:00:00	Cabelo
+f4bc714e-866f-4e89-9ce2-3200aacb77e8	2025-06-17 00:00:00	16:40	mauricio	Bruno	558182705181@s.whatsapp.net	2025-06-13 00:00:00	Cabelo
+2c721c00-f838-4482-b1c5-f5db7ec7f338	2025-06-13 00:00:00	18:40	antônio medeiros frança lins	Wallyson	558171024799@s.whatsapp.net	2025-06-13 00:00:00	Cabelo+Sobrancelha
+e27afa25-de58-4b61-972e-40eb3de7f950	2025-06-16 00:00:00	18:00	pedro henrique	Bruno	558199160082@s.whatsapp.net	2025-06-13 00:00:00	Cabelo
+f4107d77-9e0c-4fd1-add7-b10f3bab998a	2025-06-17 00:00:00	16:00	vicente	Bruno	558197192758@s.whatsapp.net	2025-06-13 00:00:00	Cabelo+Sobrancelha
+5fdb1e65-d550-4072-9ddc-0bd675c5865d	2025-06-14 00:00:00	10:40	alan elias	Wallyson	558182284289@s.whatsapp.net	2025-06-13 00:00:00	Cabelo
+76fcb771-dade-43e3-ab75-42fc1caa8697	2025-06-14 00:00:00	12:00	eliel	Bruno	558199867389@s.whatsapp.net	2025-06-13 00:00:00	Cabelo
+a6133e1f-f216-4301-875a-9708f885ab48	2025-06-14 00:00:00	08:40	Gabriel gd	Wallyson	local	2025-06-13 16:53:29.946	Cabelo
+2d0601e3-b664-490e-91d9-962a531e32f8	2025-06-14 00:00:00	17:20	Marcos filho 	Wallyson	local	2025-06-13 17:04:16.664	Cabelo
+d352c050-2b19-47ff-a917-db0e02e13438	2025-06-23 00:00:00	10:20	asafe	Bruno	558171076971@s.whatsapp.net	2025-06-13 00:00:00	Cabelo
+c8f5dc4a-f5ec-495d-bcd6-ce410eb07bb2	2025-06-16 00:00:00	14:40	Lucas piu	Wallyson	local	2025-06-13 20:52:13.349	Cabelo
+aea38cc8-bfd8-43c9-810c-bbac7f3ab67c	2025-06-14 00:00:00	15:20	Marcos 	Wallyson	local	2025-06-13 20:57:31.894	Cabelo
+d05b8bd2-dbea-4394-b33e-a619d7f3b32c	2025-06-14 00:00:00	11:20	john	Wallyson	558196903604@s.whatsapp.net	2025-06-13 00:00:00	Cabelo+Barba
+8c0a6d1e-4ee3-4f59-835c-9a483282ddf5	2025-07-18 00:00:00	18:00	Wellington adv	Bruno	local	2025-06-13 21:53:41.093	Cabelo+Barba
+6fa5829d-797b-42f2-8686-f2851453816d	2025-06-17 00:00:00	13:20	henrique	Wallyson	558171101790@s.whatsapp.net	2025-06-13 00:00:00	Cabelo
+f9a11ccb-08db-4962-9c0c-73e62dca2147	2025-06-13 00:00:00	09:00	oi	Bruno	558198022472@s.whatsapp.net	2025-06-13 00:00:00	Cabelo
+3c366fb8-1bb5-4dff-80bc-14c82adca620	2025-06-14 00:00:00	12:00	miguel	Wallyson	558197272851@s.whatsapp.net	2025-06-13 00:00:00	Cabelo
+bf904768-9be8-450e-8a34-4dc96369a32e	2025-06-19 00:00:00	15:20	marcus	Wallyson	558199349818@s.whatsapp.net	2025-06-13 00:00:00	Cabelo
+2379c0b9-001b-4fd5-8c7e-e521141cec4e	2025-06-14 00:00:00	16:00	jorge	Wallyson	558199658478@s.whatsapp.net	2025-06-13 00:00:00	Cabelo+Sobrancelha
+dbbd6843-2f41-44b3-8fe3-9100b60cab81	2025-06-20 00:00:00	10:00	matheus	Wallyson	558197941830@s.whatsapp.net	2025-06-13 00:00:00	Cabelo
+3ed69760-b2f6-4a69-8464-f32fda6af1e0	2025-06-16 00:00:00	09:00	Marcos do Instagram 	Wallyson	local	2025-06-14 12:22:41.531	Cabelo
+ef04c1f5-6847-48a0-810c-bea76a49a0ed	2025-06-14 00:00:00	16:40	anderson	Wallyson	558198557130@s.whatsapp.net	2025-06-14 00:00:00	Cabelo
+3c41bc2b-b3d6-4845-b28d-5fa30b3a7242	2025-06-16 00:00:00	11:40	mateus de melo guerra	Bruno	558199987381@s.whatsapp.net	2025-06-14 00:00:00	Cabelo
+ea66f3f6-30ad-48f4-bbd7-a199a118459b	2025-06-21 00:00:00	15:20	anderson	Bruno	558197666072@s.whatsapp.net	2025-06-14 00:00:00	Cabelo+Barba
+4cd7dc9a-bf03-4a79-9b23-9c90c2a4b4ca	2025-06-16 00:00:00	16:40	anderson da silva	Bruno	558199072414@s.whatsapp.net	2025-06-14 00:00:00	Cabelo
+e561c139-3b0c-476c-96aa-65d652651bd7	2025-06-14 00:00:00	14:00	miguel	Wallyson	558197272851@s.whatsapp.net	2025-06-14 00:00:00	Cabelo
+a3022a9c-f875-435e-a528-d4bdbe28ce65	2025-06-14 00:00:00	18:00	Vínicos 	Wallyson	local	2025-06-14 16:47:14.343	Cabelo
+9704d721-b381-4b39-b3c3-99a81b4b99a0	2025-06-16 00:00:00	13:20	Marcelly 	Wallyson	local	2025-06-14 16:47:36.506	Cabelo
+e6c5ebba-3c68-4da7-8c84-b348185bf7c5	2025-06-27 00:00:00	10:20	Emanoel 	Bruno	local	2025-06-14 17:09:01.872	Cabelo+Barba
+01227ac0-73d1-40ac-b664-5b9f726cda09	2025-06-16 00:00:00	09:40	matheus	Wallyson	558189099239@s.whatsapp.net	2025-06-14 00:00:00	Cabelo
+35b2da1b-8545-4541-abf6-e014244253ca	2025-06-16 00:00:00	15:20	fernando	Bruno	558196035269@s.whatsapp.net	2025-06-14 00:00:00	Cabelo
+88088f44-2f8c-470a-81a5-efb4b2aa9c49	2025-06-21 00:00:00	16:00	Arthur filho cara do balaio	Wallyson	local	2025-06-14 18:55:40.808	Cabelo
+c433deea-93ba-49e9-a387-90a6348db3e2	2025-06-18 00:00:00	19:20	Teteu	Bruno	local	2025-06-14 19:00:52.716	Cabelo
+bae3e41d-8267-4fac-a7a6-45f45be12b24	2025-06-16 00:00:00	09:40	Ocupado	Bruno	local	2025-06-14 20:09:22.65	Cabelo
+adfa1452-12cf-48f9-9a5f-63aac404995b	2025-06-16 00:00:00	10:20	Ocupado	Bruno	local	2025-06-14 20:09:33.472	Cabelo
+aedabcd5-6f06-4f2c-8dca-540a9a607c9a	2025-06-16 00:00:00	11:00	Ocupado	Bruno	local	2025-06-14 20:09:49.409	Cabelo
+68215234-ab0a-4666-a5dd-e970436b98c1	2025-06-19 00:00:00	10:40	júlio césar	Wallyson	558196440108@s.whatsapp.net	2025-06-15 00:00:00	Cabelo+Sobrancelha
+8fda722f-4572-41bd-a3da-056c9a2796db	2025-06-21 00:00:00	11:20	elysson	Bruno	558199697267@s.whatsapp.net	2025-06-15 00:00:00	Cabelo+Sobrancelha
+af912133-d463-40d3-9b15-c54465fb2a5d	2025-06-23 00:00:00	14:00	Serginho irmão Deivid 	Bruno	local	2025-06-15 16:44:51.933	Cabelo
+9cb85e8f-6402-42f7-81d4-19d66a996442	2025-06-17 00:00:00	19:20	Vitor negão 	Bruno	local	2025-06-15 17:05:23.148	Cabelo
+1bda3a79-2023-4083-9d3c-c6f4bf99f436	2025-06-16 00:00:00	17:20	Vinicius 	Wallyson	local	2025-06-15 17:17:01.128	Cabelo
+2275a5c0-b7c7-4b41-9593-c9c3b55596aa	2025-06-17 00:00:00	16:00	rubens	Wallyson	558198296625@s.whatsapp.net	2025-06-15 00:00:00	Cabelo
+103f3a4f-9687-493f-9a7f-9cbb2aab589d	2025-06-20 00:00:00	18:40	renan	Bruno	558198296625@s.whatsapp.net	2025-06-15 00:00:00	Cabelo
+b6e2ec2d-41d5-4dce-9273-26a122c4849c	2025-06-16 00:00:00	14:40	matheus	Bruno	558196073942@s.whatsapp.net	2025-06-15 00:00:00	Cabelo+Barba
+ba26fda3-1620-49fa-95f7-5476d1f116af	2025-06-16 00:00:00	14:00	rafael	Wallyson	558196073942@s.whatsapp.net	2025-06-15 00:00:00	Cabelo
+340fdc77-8cda-4f20-a6be-b219ff9b26d3	2025-06-16 00:00:00	16:40	mario areias	Wallyson	558381367304@s.whatsapp.net	2025-06-16 00:00:00	Cabelo
+4755a7b9-a1f6-46c4-ac14-03a1c3a1b400	2025-06-18 00:00:00	08:00	horlean	Wallyson	558281363560@s.whatsapp.net	2025-06-16 00:00:00	Cabelo+Sobrancelha
+19ac5866-1087-4227-aec6-ac443019ddf6	2025-06-17 00:00:00	08:40	Pyetro	Wallyson	local	2025-06-16 10:51:25.155	Cabelo
+f63c8113-c21d-41ec-80a6-76a554789813	2025-06-18 00:00:00	14:00	luiz	Wallyson	558197975570@s.whatsapp.net	2025-06-16 00:00:00	Cabelo
+c6b6609a-4a3b-43cf-82d6-cd904435bff9	2025-06-16 00:00:00	15:20	Pedro 	Wallyson	local	2025-06-16 13:07:44.286	Cabelo
+30195b43-b74e-45fa-951b-4fa722c10ef2	2025-06-19 00:00:00	09:20	Robertinho 	Wallyson	local	2025-06-16 13:16:57.775	Cabelo
+cb51eba0-5944-4a14-95c4-13b31813ed57	2025-06-19 00:00:00	08:40	Daniel 	Wallyson	local	2025-06-16 13:17:36.176	Cabelo
+14ad9dce-8675-4a63-9976-63078eed6423	2025-06-17 00:00:00	15:20	lucas	Bruno	558197326785@s.whatsapp.net	2025-06-16 00:00:00	Cabelo
+4eb3f255-93c3-43ab-98cd-e8b5040a3ac4	2025-06-16 00:00:00	16:00	João Carmen 	Wallyson	local	2025-06-16 14:28:11.784	Cabelo
+1cb36a38-1ee4-4d88-b0a0-096522c4f4bc	2025-06-17 00:00:00	10:00	Miguel 	Wallyson	local	2025-06-16 14:47:49.214	Cabelo
+12e5c22a-b597-4c3e-b8a4-ffa81dd6d018	2025-06-17 00:00:00	08:00	gabriel	Wallyson	558181774084@s.whatsapp.net	2025-06-16 00:00:00	Cabelo
+56b57dd7-31a6-4aa9-bc77-3ead341bf0ca	2025-06-17 00:00:00	14:40	evodya	Bruno	558197121270@s.whatsapp.net	2025-06-16 00:00:00	Cabelo
+3247876e-ead1-4021-9353-e4e79ddcffe8	2025-06-19 00:00:00	14:40	Higor 	Wallyson	local	2025-06-16 20:05:13.156	Cabelo+Barba
+f49e3a1d-8e7a-4bda-bcb2-41546ed77ab9	2025-06-21 00:00:00	09:20	Matheus criança 	Wallyson	local	2025-06-16 20:59:55.018	Cabelo
+062fea35-613e-4410-98eb-cb3a6aa70633	2025-07-03 00:00:00	18:40	lucas leal	Bruno	558182605271@s.whatsapp.net	2025-06-16 00:00:00	Cabelo+Sobrancelha
+9469b341-6ab0-4eb4-8332-e4301e9c2b47	2025-06-19 00:00:00	11:20	pedro sérgio	Wallyson	558197271391@s.whatsapp.net	2025-06-16 00:00:00	Cabelo
+46bac491-1fb2-4ba7-9911-7e85a149ace3	2025-06-17 00:00:00	09:40	Dorgyl	Bruno	local	2025-06-17 00:41:47.075	Cabelo
+fe85c66b-da5a-499e-883c-690839a50efb	2025-06-17 00:00:00	09:20	Ocupado 	Wallyson	local	2025-06-17 11:34:08.064	Cabelo
+f41dae4b-d530-49a4-8a90-5985c7cbd435	2025-06-27 00:00:00	18:40	ualesson	Bruno	558199786467@s.whatsapp.net	2025-06-17 00:00:00	Cabelo
+0679c4cc-69d3-443c-a03e-b2e43fc8f2d0	2025-06-17 00:00:00	09:00	Wellington 	Bruno	local	2025-06-17 13:01:43.976	Cabelo
+2dfe68d5-3b14-4d60-b93b-4184f5c74aeb	2025-06-18 00:00:00	08:40	leandro	Wallyson	558195021216@s.whatsapp.net	2025-06-17 00:00:00	Cabelo
+24b85042-4de0-4f74-9e5f-b7c14ef9dbbf	2025-06-21 00:00:00	18:00	foi eu vi bruno tinha esquecido, valeu	Wallyson	558196448583@s.whatsapp.net	2025-06-17 00:00:00	Cabelo+Sobrancelha
+2ce52dd3-7f35-4c63-975a-5fae6f6b3f26	2025-06-21 00:00:00	17:20	samuel	Wallyson	558196448583@s.whatsapp.net	2025-06-17 00:00:00	Cabelo+Sobrancelha
+2780a08a-a493-4508-aa81-b440a75c244a	2025-06-21 00:00:00	10:40	davidson	Wallyson	558199527666@s.whatsapp.net	2025-06-17 00:00:00	Cabelo+Barba
+100c1c04-cf55-4cda-8386-de36486702bc	2025-06-24 00:00:00	08:00	joaquim gonçalo	Wallyson	558199504021@s.whatsapp.net	2025-06-17 00:00:00	Cabelo+Sobrancelha
+a23f5b46-ac89-422a-863a-7ebe3125cea8	2025-06-21 00:00:00	14:40	pedro robson	Wallyson	558198929820@s.whatsapp.net	2025-06-17 00:00:00	Cabelo
+d86b2f61-2191-4e14-8fcd-6505c2f70d1c	2025-06-23 00:00:00	11:00	cauê	Bruno	558197796167@s.whatsapp.net	2025-06-17 00:00:00	Cabelo
+197e5c24-4aa8-4e7c-a373-88ed648c0207	2025-06-23 00:00:00	15:20	breno	Bruno	558197349442@s.whatsapp.net	2025-06-17 00:00:00	Cabelo
+6b1cf275-7e7f-4ccb-a9fe-4c4c66e4401d	2025-06-19 00:00:00	11:00	João mendes	Wallyson	local	2025-06-17 15:56:00.809	Cabelo
+2369ae7f-5b51-4cd0-a7ae-f1a5123ea500	2025-06-23 00:00:00	13:20	tássio moraes	Bruno	558197909383@s.whatsapp.net	2025-06-17 00:00:00	Cabelo+Barba
+60cacd37-3326-45e1-95c5-2f8a2a90eb7e	2025-06-18 00:00:00	13:20	Filho de Marcílio 	Wallyson	local	2025-06-17 17:35:19.767	Cabelo
+afdee5be-7b30-4e42-86c1-9d4b5907c344	2025-06-18 00:00:00	10:00	Marcílio 	Wallyson	local	2025-06-17 17:50:14.129	Cabelo
+29592c02-6e84-4f82-aaa0-56c3d1123190	2025-06-18 00:00:00	10:40	Wesely 	Wallyson	local	2025-06-17 18:46:17.325	Cabelo
+14bc890d-e46b-4889-8972-cb15971ea996	2025-06-18 00:00:00	11:20	Kauan 	Wallyson	local	2025-06-17 18:53:36.054	Cabelo
+adc26159-fd6b-4139-af6f-e3ad5641eb42	2025-06-20 00:00:00	19:20	denilson	Bruno	558197084296@s.whatsapp.net	2025-06-17 00:00:00	Barba
+33bba5c3-97b5-47a5-853a-41a350d38318	2025-06-20 00:00:00	20:00	paulo	Bruno	558199302136@s.whatsapp.net	2025-06-17 00:00:00	Cabelo
+49f4601e-fae3-44b8-91b7-300284d136b9	2025-06-23 00:00:00	18:00	anderson carlos	Bruno	558196579148@s.whatsapp.net	2025-06-18 00:00:00	Cabelo
+e2e17998-88cc-47be-ab34-aea5611bbf78	2025-06-21 00:00:00	12:00	Lucian 	Wallyson	local	2025-06-18 11:30:24.624	Cabelo
+24381998-ecb5-44a0-9fb9-4b5ea7a1a04d	2025-06-21 00:00:00	13:20	daniel	Wallyson	558199459046@s.whatsapp.net	2025-06-18 00:00:00	Cabelo
+3d174a53-bbae-46b6-9799-21705ec06ad4	2025-06-21 00:00:00	11:20	Daniel 	Wallyson	local	2025-06-18 11:52:13.578	Cabelo
+e79088e9-fc58-43ce-8106-2dd755743bd0	2025-06-23 00:00:00	13:20	gustavo fiel romão da silva	Wallyson	558197822298@s.whatsapp.net	2025-06-18 00:00:00	Cabelo
+ff3144bf-7905-4907-9082-f1d631184bc1	2025-06-23 00:00:00	14:00	thiago fiel romão da silva	Wallyson	558197822298@s.whatsapp.net	2025-06-18 00:00:00	Cabelo+Barba
+fd91b463-21dc-4fe0-8f34-c0afdcc47883	2025-06-24 00:00:00	14:00	vandro júnior	Wallyson	558196610362@s.whatsapp.net	2025-06-18 00:00:00	Cabelo
+ae6e5a90-8264-4fb0-ab98-248d87ed144c	2025-06-23 00:00:00	10:20	moisés	Wallyson	558171076971@s.whatsapp.net	2025-06-18 00:00:00	Cabelo+Barba
+c90318d7-cbb2-4658-bcfe-7bdf8427acf1	2025-06-23 00:00:00	16:00	pedro augusto	Bruno	558171185174@s.whatsapp.net	2025-06-19 00:00:00	Cabelo
+f8aeae1b-e23a-48ba-9614-00f0869c50c2	2025-06-23 00:00:00	09:00	Indisponivel	Wallyson	Indisponivel	2025-06-19 17:14:57.668	
+ad57137f-92c8-41af-a284-b7e503b76232	2025-06-23 00:00:00	09:40	Indisponivel	Wallyson	Indisponivel	2025-06-19 17:14:57.755	
+5f993a54-9e69-4e38-9367-468790a34b77	2025-06-23 00:00:00	10:20	Indisponivel	Wallyson	Indisponivel	2025-06-19 17:14:57.783	
+9f405e7e-22d4-46a9-ac06-4212980416a0	2025-06-23 00:00:00	11:00	Indisponivel	Wallyson	Indisponivel	2025-06-19 17:14:57.811	
+eb46242a-e7f4-4a72-b8c6-7fbb9d4a66ae	2025-06-23 00:00:00	11:40	Indisponivel	Wallyson	Indisponivel	2025-06-19 17:14:57.849	
+2379f10e-bc89-4327-8742-db0d837c2ee5	2025-06-23 00:00:00	13:20	Indisponivel	Wallyson	Indisponivel	2025-06-19 17:14:57.875	
+9f924a13-b6c3-4ecc-89e9-6571e1b24115	2025-06-23 00:00:00	14:00	Indisponivel	Wallyson	Indisponivel	2025-06-19 17:14:57.904	
+b73fe8de-d8a0-4892-a6db-f5b1c0f89f82	2025-06-23 00:00:00	14:40	Indisponivel	Wallyson	Indisponivel	2025-06-19 17:14:57.93	
+f7f17f9b-8805-4c4b-8437-0b9869dfd32f	2025-06-23 00:00:00	15:20	Indisponivel	Wallyson	Indisponivel	2025-06-19 17:14:57.957	
+fa2c732f-806e-4896-a498-490ca500144c	2025-06-23 00:00:00	16:00	Indisponivel	Wallyson	Indisponivel	2025-06-19 17:14:57.985	
+2fcb65eb-a15d-4e1d-85c4-05277b7c996c	2025-06-23 00:00:00	16:40	Indisponivel	Wallyson	Indisponivel	2025-06-19 17:14:58.018	
+4587dbb9-0d94-4aa9-ba64-aab56eaaccc4	2025-06-23 00:00:00	17:20	Indisponivel	Wallyson	Indisponivel	2025-06-19 17:14:58.046	
+432c3287-47bd-4e92-a786-a90d8cd45736	2025-06-23 00:00:00	18:00	Indisponivel	Wallyson	Indisponivel	2025-06-19 17:14:58.073	
+05a0ddd7-703f-4d97-99a3-3ff57dd2b2d3	2025-06-23 00:00:00	18:40	Indisponivel	Wallyson	Indisponivel	2025-06-19 17:14:58.1	
+1bbe7553-949b-4750-9091-68a257b8ae85	2025-06-23 00:00:00	18:40	deyvson	Bruno	558195479577@s.whatsapp.net	2025-06-19 00:00:00	Cabelo
+3805a5c4-f1cd-47e6-87ce-e87d89f4e5bd	2025-06-27 00:00:00	14:00	william gabriel	Bruno	558198087356@s.whatsapp.net	2025-06-19 00:00:00	Cabelo
+22730e5d-a964-4b2e-87bd-ca170b66820f	2026-06-27 00:00:00	16:40	zaldinho	Bruno	558198591039@s.whatsapp.net	2025-06-19 00:00:00	Cabelo
+9b4e3e46-5c67-4855-b807-8e0f5a0f1392	2025-06-23 00:00:00	11:40	pedro henrique	Bruno	558185032618@s.whatsapp.net	2025-06-19 00:00:00	Cabelo+Sobrancelha
+71491fe7-fa11-443a-91a4-67e3fbc922d3	2025-06-21 00:00:00	16:40	gabriel	Wallyson	558196236188@s.whatsapp.net	2025-06-19 00:00:00	Cabelo
+e9ceb4b8-875c-44be-ac6f-9aa8adfbae6e	2025-06-25 00:00:00	16:40	tarcísio	Bruno	558185887456@s.whatsapp.net	2025-06-19 00:00:00	Cabelo
+13d8bf05-a1d8-40a3-bc17-8d822d211ffa	2025-06-21 00:00:00	10:00	Ocupado 	Bruno	local	2025-06-20 02:52:42.972	Cabelo
+cb266e7d-59e1-46f8-9484-49d9660eb954	2025-06-28 00:00:00	14:40	dubolo	Bruno	558196647899@s.whatsapp.net	2025-06-20 00:00:00	Cabelo+Sobrancelha
+5d5131bb-4092-4cb4-9918-e42cd13180e8	2025-07-10 00:00:00	11:20	Kiko 	Wallyson	local	2025-06-20 15:12:09.712	Cabelo
+7f7d3a4d-3048-4192-bb0c-9f19895e9562	2025-06-24 00:00:00	14:40	edson	Wallyson	558198615843@s.whatsapp.net	2025-06-20 00:00:00	Cabelo
+0683c700-136c-421f-bb0b-d366311a8f7a	2025-06-25 00:00:00	15:20	wellington (anthony)	Bruno	558198296294@s.whatsapp.net	2025-06-20 00:00:00	Cabelo
+6a6b2a63-2dc7-4d41-b317-9f1af31fd10f	2025-06-25 00:00:00	17:20	lucas	Wallyson	558197326785@s.whatsapp.net	2025-06-20 00:00:00	Cabelo
+50132e00-257f-4106-9c7a-570cec7bd8ff	2025-07-25 00:00:00	13:20	gabriel henrique	Bruno	558185537298@s.whatsapp.net	2025-06-20 00:00:00	Cabelo
+a4e7e382-9d12-4681-8b90-0d8a95646609	2025-06-24 00:00:00	10:20	joão marcello	Bruno	558196393507@s.whatsapp.net	2025-06-20 00:00:00	Cabelo
+296f0af8-6d48-43a0-bf27-6f64845d55d7	2025-06-21 00:00:00	08:00	wesley	Bruno	558196817233@s.whatsapp.net	2025-06-20 00:00:00	Cabelo
+17141666-35f1-472f-9b25-b70cd767334c	2025-07-02 00:00:00	16:40	glaucio	Wallyson	558187255411@s.whatsapp.net	2025-06-20 00:00:00	Cabelo
+d65d8950-b1f1-4f6d-b246-0e498b7ae138	2025-06-25 00:00:00	11:40	manoel neto	Bruno	558195055212@s.whatsapp.net	2025-06-20 00:00:00	Cabelo+Barba
+749e6a81-dd6b-4589-a55c-8f2a4d31d8ad	2025-06-28 00:00:00	09:20	mathias	Wallyson	558187494403@s.whatsapp.net	2025-06-20 00:00:00	Cabelo+Barba
+cf37cf4a-393e-45d9-98fb-124e92d904c0	2025-06-26 00:00:00	18:00	gonzaga neto	Bruno	558198514795@s.whatsapp.net	2025-06-21 00:00:00	Cabelo
+43e2fa29-3425-4f5a-825b-0f7650c1168f	2025-07-01 00:00:00	10:00	henrique	Wallyson	558171101790@s.whatsapp.net	2025-06-21 00:00:00	Cabelo
+a7bf71e7-8b2a-4870-8c1d-d12655212ed1	2025-06-25 00:00:00	13:20	gabriel henrique	Bruno	558185537298@s.whatsapp.net	2025-06-21 00:00:00	Cabelo
+0566153a-5928-41c9-9b99-2d196cf3c4da	2025-06-24 00:00:00	09:00	renan	Bruno	558198296625@s.whatsapp.net	2025-06-21 00:00:00	Cabelo
+f56bfba7-0870-4928-a93b-7a9012e4f6de	2025-06-24 00:00:00	09:40	vinicius jorge	Bruno	558195743981@s.whatsapp.net	2025-06-21 00:00:00	Cabelo
+ef1eb41c-21b8-470e-aec6-a1ad0f333847	2025-06-25 00:00:00	16:40	Ademir 	Wallyson	local	2025-06-21 17:10:22.266	Cabelo
+9ccdbd99-0b51-43c9-9f16-23d84cdca2ef	2025-06-27 00:00:00	13:20	fabiano	Bruno	558194610556@s.whatsapp.net	2025-06-21 00:00:00	Cabelo+Barba
+c4b4e078-12d8-4d9d-b552-8484aa1417ca	2025-06-24 00:00:00	14:40	eliel	Bruno	558199867389@s.whatsapp.net	2025-06-21 00:00:00	Cabelo
+75fad652-c341-4567-933d-d36a567ab149	2025-06-24 00:00:00	16:00	francisco	Wallyson	558182062970@s.whatsapp.net	2025-06-22 00:00:00	Cabelo
+cf3b0d27-f989-4463-ac54-52c60e8ba403	2025-06-25 00:00:00	18:40	felipe silva	Bruno	558196065070@s.whatsapp.net	2025-06-22 00:00:00	Cabelo
+a18a63a0-c803-43af-9c26-71bc0d6fd149	2025-06-24 00:00:00	17:20	lucas da silva	Bruno	558188204134@s.whatsapp.net	2025-06-22 00:00:00	Cabelo
+c07e4205-deed-4d9c-bb2a-6e20688139d7	2025-06-23 00:00:00	14:40	heitor batista	Bruno	558197535746@s.whatsapp.net	2025-06-22 00:00:00	Cabelo
+64dcf417-962d-4f02-a882-091131000965	2025-06-27 00:00:00	16:00	wesley	Wallyson	558181016662@s.whatsapp.net	2025-06-22 00:00:00	Cabelo+Sobrancelha
+816f3c81-fa89-4ef4-b3d2-884c9e8aff61	2025-06-27 00:00:00	14:40	joão lucas	Bruno	558189785404@s.whatsapp.net	2025-06-22 00:00:00	Cabelo+Sobrancelha
+e84380a7-93a9-40ad-811d-30cd3f02e4c1	2025-06-27 00:00:00	18:00	marcos	Bruno	558197149668@s.whatsapp.net	2025-06-22 00:00:00	Cabelo
+347705eb-5740-4520-9359-d06476989d4e	2025-06-26 00:00:00	17:20	italo	Bruno	558198405729@s.whatsapp.net	2025-06-22 00:00:00	Cabelo
+0e952a2b-3d51-425b-9b87-479a8f425b93	2025-06-27 00:00:00	09:00	jefferson	Bruno	558196311311@s.whatsapp.net	2025-06-23 00:00:00	Cabelo
+e90bbc52-b69e-4ecf-ba53-2cc578555c9b	2025-06-24 00:00:00	09:00	Indisponivel	Bruno	Indisponivel	2025-06-23 13:02:24.681	
+252ca3c8-715e-49cc-bc32-2bf3a66811c7	2025-06-24 00:00:00	09:40	Indisponivel	Bruno	Indisponivel	2025-06-23 13:02:24.771	
+0876e43f-1092-4613-aeed-7779b4e6db86	2025-06-24 00:00:00	10:20	Indisponivel	Bruno	Indisponivel	2025-06-23 13:02:24.802	
+d4d1732c-46c5-4976-a07b-cc703cef4dc7	2025-06-24 00:00:00	11:00	Indisponivel	Bruno	Indisponivel	2025-06-23 13:02:24.832	
+9ed9ca9e-6604-4368-bc5d-d32de6ecdfd6	2025-06-24 00:00:00	11:40	Indisponivel	Bruno	Indisponivel	2025-06-23 13:02:24.862	
+6fbd7c88-0b6e-431e-83b5-86916f5b4ad9	2025-06-24 00:00:00	13:20	Indisponivel	Bruno	Indisponivel	2025-06-23 13:02:24.895	
+6697849a-ad11-483c-bd8d-2076385525c5	2025-06-24 00:00:00	14:00	Indisponivel	Bruno	Indisponivel	2025-06-23 13:02:24.926	
+64724a90-bd6a-4d23-bb57-76f9d9d0a542	2025-06-24 00:00:00	14:40	Indisponivel	Bruno	Indisponivel	2025-06-23 13:02:25.013	
+250351fc-6df9-4599-80bf-35c8dc5cf63d	2025-06-24 00:00:00	15:20	Indisponivel	Bruno	Indisponivel	2025-06-23 13:02:25.045	
+ef6639e6-d7ef-4552-89b8-2bbb4fdf289d	2025-06-24 00:00:00	16:00	Indisponivel	Bruno	Indisponivel	2025-06-23 13:02:25.074	
+fedd05b0-1c4b-416a-8353-0dacdf9ccf78	2025-06-24 00:00:00	16:40	Indisponivel	Bruno	Indisponivel	2025-06-23 13:02:25.105	
+7a7bf647-ba5e-40a3-955e-b176f6d350f3	2025-06-24 00:00:00	17:20	Indisponivel	Bruno	Indisponivel	2025-06-23 13:02:25.135	
+8409bf73-cdef-4bfd-8038-03e98057f77f	2025-06-24 00:00:00	18:00	Indisponivel	Bruno	Indisponivel	2025-06-23 13:02:25.166	
+a20665d3-cdcf-4a64-a6bd-760932f220ac	2025-06-24 00:00:00	18:40	Indisponivel	Bruno	Indisponivel	2025-06-23 13:02:25.197	
+9bf431b0-20ee-4cab-80ae-9126ac02d21c	2025-06-24 00:00:00	19:20	Indisponivel	Bruno	Indisponivel	2025-06-23 13:02:25.228	
+e05bb0d6-57fe-4396-8f70-3df3a96fd1a2	2025-06-25 00:00:00	09:40	deyvid luzes	Bruno	558199201610@s.whatsapp.net	2025-06-23 00:00:00	Cabelo
+bfa05676-01ce-4fb7-b439-9f7a87369ea7	2025-06-25 00:00:00	16:00	weslley	Bruno	558197215641@s.whatsapp.net	2025-06-23 00:00:00	Cabelo
+da5a6cf1-de9d-45b9-b87d-55d8da06e77a	2025-06-27 00:00:00	15:20	matheus	Bruno	558196191710@s.whatsapp.net	2025-06-23 00:00:00	Cabelo+Sobrancelha
+732971be-3441-4ab3-8e43-9cb71d25e7e3	2025-06-26 00:00:00	16:40	joão guilherme	Bruno	558181673375@s.whatsapp.net	2025-06-23 00:00:00	Cabelo
+f5cf9f4e-2827-4761-beb5-2ea0471f5ace	2025-06-27 00:00:00	11:40	arthur	Bruno	558194115511@s.whatsapp.net	2025-06-23 00:00:00	Cabelo+Barba
+887efa21-6068-48ab-9be7-be9e7ef757ce	2025-06-27 00:00:00	16:40	eduardo	Bruno	558194297236@s.whatsapp.net	2025-06-23 00:00:00	Cabelo+Barba
+18d59e69-6875-48f7-b1c3-bc1fd3b5e46f	2025-06-28 00:00:00	16:40	Rafael da farmácia 	Wallyson	local	2025-06-23 18:13:06.312	Cabelo+Barba
+199c9b18-fcbb-46f7-a33a-0e2553f1538f	2025-06-25 00:00:00	11:00	jefferson	Bruno	558197857453@s.whatsapp.net	2025-06-23 00:00:00	Cabelo
+231a3dc2-f824-4555-a5d3-3b227a9c8fd6	2025-06-24 00:00:00	18:40	Marcado 	Wallyson	local	2025-06-23 19:08:03.829	Cabelo+Barba
+09775446-32f5-47a3-bfcb-18dc996d3feb	2025-06-24 00:00:00	18:00	Juninho compadre 	Wallyson	local	2025-06-23 19:08:29.984	Cabelo+Barba
+6541c0af-1e22-47e7-bbe1-e0ed97e1979f	2025-06-25 00:00:00	18:40	Juninho 	Wallyson	local	2025-06-23 19:11:04.754	Cabelo+Barba
+b8719764-290a-4ad9-8e57-de7499f2797f	2025-06-24 00:00:00	17:20	Marcado 	Wallyson	local	2025-06-23 19:11:20.199	Cabelo
+26628496-57e3-490e-9553-b745ab1a8138	2025-06-24 00:00:00	15:20	Miguel 	Wallyson	local	2025-06-23 19:11:47.046	Cabelo
+932a36f7-9ff4-457a-86ad-b2259d1f6151	2025-06-24 00:00:00	08:40	Marcado 	Wallyson	local	2025-06-23 19:33:47.395	Cabelo
+4ee71072-d969-4bd6-86ff-32e559630e68	2025-06-24 00:00:00	13:20	Marcado 	Wallyson	local	2025-06-23 19:34:01.466	Cabelo
+e85128e4-12b3-4e4e-88a2-432f5737c507	2025-06-25 00:00:00	15:20	Gustavo 	Wallyson	local	2025-06-24 00:23:46.534	Cabelo
+cfa4f92c-498d-411e-bf1f-ee145af8f73b	2025-06-25 00:00:00	17:20	lucas da silva batista	Bruno	558188204134@s.whatsapp.net	2025-06-24 00:00:00	Cabelo
+863c428c-ffa1-4d08-958e-f6947d9a1fb3	2025-06-27 00:00:00	09:40	bruno	Bruno	558189873832@s.whatsapp.net	2025-06-24 00:00:00	Cabelo+Barba
+ec25af88-fc5b-4005-b652-a54ab6e344d3	2025-06-25 00:00:00	09:00	Joaquim gonzalo	Bruno	local	2025-06-24 11:05:25.186	Cabelo
+53054566-fc9c-4b8d-b7bd-e2cf791c00ac	2025-06-24 00:00:00	16:40	Marcado 	Wallyson	local	2025-06-24 11:57:17.602	Cabelo
+96803957-79bd-4147-a696-8421574856b8	2025-06-26 00:00:00	16:00	matheus lima	Bruno	558199670970@s.whatsapp.net	2025-06-24 00:00:00	Cabelo+Sobrancelha
+56ae1d6d-120a-432b-a49c-90300c7e62cc	2025-06-25 00:00:00	13:20	gustavo fiel romão da silva	Wallyson	558197822298@s.whatsapp.net	2025-06-24 00:00:00	Cabelo
+da0b599a-aa17-41c2-ade7-f1b78fb230a4	2025-06-25 00:00:00	14:00	thiago fiel romão da silva	Wallyson	558197822298@s.whatsapp.net	2025-06-24 00:00:00	Cabelo
+980ecf46-6285-4009-b547-cea3568643ca	2025-06-26 00:00:00	10:20	matheus	Bruno	558199219447@s.whatsapp.net	2025-06-24 00:00:00	Cabelo
+e750956a-4679-4052-ae05-4e9d1d236bd9	2025-06-25 00:00:00	18:00	Ademir 	Wallyson	local	2025-06-24 16:58:56.201	Cabelo
+b9ff9a54-9cc1-49d8-a017-e9e61b8cb6dd	2025-06-25 00:00:00	16:00	Nicolas 	Wallyson	local	2025-06-24 17:35:23.165	Cabelo
+f2e6b155-9c81-440c-bed0-00c0804bc18d	2025-06-25 00:00:00	14:40	victor scanone	Bruno	558197607060@s.whatsapp.net	2025-06-24 00:00:00	Cabelo
+a4ace9df-f925-47cd-80c8-8815fb390dc5	2025-06-27 00:00:00	17:20	lucas josé	Bruno	558199311183@s.whatsapp.net	2025-06-24 00:00:00	Cabelo+Sobrancelha
+f5f0c840-682a-44ef-8ddf-6e1cf3313432	2025-06-26 00:00:00	14:40	marcos rodrigues	Bruno	558196681292@s.whatsapp.net	2025-06-24 00:00:00	Cabelo
+5f489df7-6e5d-4af7-bc40-0fb811b14039	2025-06-25 00:00:00	14:40	ronnye	Wallyson	558198353903@s.whatsapp.net	2025-06-24 00:00:00	Cabelo
+1966b6c4-b189-4768-8cf1-f051d0ccf6ee	2025-06-27 00:00:00	19:20	denílson	Bruno	558197084296@s.whatsapp.net	2025-06-24 00:00:00	Barba
+b22ecd94-a385-43e6-a5e9-574c3a503977	2025-06-28 00:00:00	10:00	0	Bruno	558199700555@s.whatsapp.net	2025-06-24 00:00:00	Cabelo
+96e8c8ed-eef3-4350-9489-fd259964a28c	2025-06-28 00:00:00	10:00	0	Wallyson	558199700555@s.whatsapp.net	2025-06-24 00:00:00	Cabelo
+fb72cccf-07c9-4731-831c-fa1efadb27cf	2025-06-27 00:00:00	18:40	Indisponivel	Wallyson	Indisponivel	2025-06-24 22:25:08.588	
+4b42f0a2-b2bb-4dee-bf5d-1f7807196da5	2025-06-27 00:00:00	19:20	Indisponivel	Wallyson	Indisponivel	2025-06-24 22:25:08.692	
+ec37b797-4933-482a-90b4-ee68c666723c	2025-06-27 00:00:00	20:00	Indisponivel	Wallyson	Indisponivel	2025-06-24 22:25:08.727	
+3bbd7c84-89bc-4a8b-8b98-381d12940ada	2025-06-27 00:00:00	18:00	Wendel 	Wallyson	local	2025-06-24 22:25:38.766	Cabelo
+a1226bf1-3488-4b78-9994-ea25818d6d98	2025-06-27 00:00:00	11:20	felipe	Wallyson	558181451150@s.whatsapp.net	2025-06-24 00:00:00	Cabelo+Sobrancelha
+04e4a234-9aa4-4b54-b60f-cf23efeb973a	2025-06-27 00:00:00	20:00	pedro henrique	Bruno	558199160082@s.whatsapp.net	2025-06-24 00:00:00	Cabelo
+90df2678-dfea-43b9-81ed-6327410fa448	2025-06-26 00:00:00	17:20	enzo alexandre lima	Wallyson	558184998670@s.whatsapp.net	2025-06-24 00:00:00	Cabelo+Sobrancelha
+3b689898-ea0d-4ed4-8fe3-df44e0db0885	2025-06-28 00:00:00	08:40	cláudio henrique	Wallyson	558188482085@s.whatsapp.net	2025-06-24 00:00:00	Cabelo
+8f9f664c-16f7-4b13-91fc-d9837f41240b	2025-06-25 00:00:00	10:20	Itami 	Bruno	local	2025-06-25 10:39:33.26	Cabelo
+1e54a347-116f-43ee-a5cf-7c17e2b2e431	2025-06-26 00:00:00	16:40	Paulo 	Wallyson	local	2025-06-25 11:35:11.681	Cabelo
+d41e3513-c44e-4601-afb4-5bd94fae3fa5	2025-06-26 00:00:00	08:00	Luís André 	Wallyson	local	2025-06-25 11:42:53.841	Cabelo
+9921724c-926e-4bca-b986-4f6da4832063	2025-06-26 00:00:00	18:40	Eudes 	Wallyson	local	2025-06-25 13:05:07.463	Cabelo+Barba
+99611e26-c5a7-4f11-ace1-44f30886bd4e	2025-06-26 00:00:00	10:00	Adegilson 	Wallyson	local	2025-06-25 13:13:14.685	Cabelo
+ce92b219-1a40-49c8-8715-f19d87c3450b	2025-06-25 00:00:00	18:00	Ocupado	Bruno	local	2025-06-25 13:39:26.25	Cabelo
+ad35ceb6-c345-427d-b9c0-7f8eb7ac66a1	2025-06-26 00:00:00	09:20	john	Wallyson	558196903604@s.whatsapp.net	2025-06-25 00:00:00	Cabelo+Barba
+19a38dd4-8566-4bb8-ad05-d4607483dfce	2025-06-27 00:00:00	08:40	fernando correia da silva	Wallyson	558199732471@s.whatsapp.net	2025-06-25 00:00:00	Cabelo
+eb6e7f8e-d118-476b-82cf-ce2ea110f9b0	2025-06-27 00:00:00	09:20	welliton	Wallyson	558199732471@s.whatsapp.net	2025-06-25 00:00:00	Cabelo
+7a0f7e3f-a133-49ac-beac-88c09308cf09	2025-06-25 00:00:00	14:00	eliel	Bruno	558199867389@s.whatsapp.net	2025-06-25 00:00:00	Cabelo
+18ef9479-4bf4-41a6-b957-c431828122a6	2025-06-26 00:00:00	11:40	thomas	Bruno	558181391720@s.whatsapp.net	2025-06-25 00:00:00	Cabelo
+ec57003f-0c2c-4271-a621-351fe7324a3e	2025-06-26 00:00:00	09:40	Ivan 	Bruno	local	2025-06-25 18:09:47.564	Cabelo
+2ccf8f8e-9b0d-4210-91d5-dc5ff91b2926	2025-06-26 00:00:00	16:00	Liaderson 	Wallyson	local	2025-06-25 19:01:58.776	Cabelo
+004721de-de21-44af-97c4-b76b3cb72953	2025-06-26 00:00:00	15:20	nando	Wallyson	558181323380@s.whatsapp.net	2025-06-25 00:00:00	Cabelo
+1e031851-5cb7-4b2f-b45f-e941c6868fe1	2025-06-28 00:00:00	10:40	fábio cria	Bruno	5521980058628@s.whatsapp.net	2025-06-25 00:00:00	Cabelo
+6cca26e9-9e14-49e3-8e33-1680187eab48	2025-06-27 00:00:00	15:20	Rivaldo 	Wallyson	local	2025-06-25 19:53:32.575	Cabelo
+c611943c-6511-4b31-9182-3f1a9c16ea5c	2025-06-26 00:00:00	08:40	Marcelo 	Wallyson	local	2025-06-25 19:54:44.71	Cabelo
+85dbdacf-97a6-4588-9c0e-a4991a5aa60a	2025-06-27 00:00:00	17:20	Liaderson 	Wallyson	local	2025-06-25 19:55:30.548	Cabelo
+4d88cd87-7fb1-4858-acfd-f9c83d5c7151	2025-06-28 00:00:00	08:00	douglas wesley	Bruno	558181954284@s.whatsapp.net	2025-06-25 00:00:00	Cabelo
+683e73b9-379d-4ce5-8980-bff826c54ba3	2025-07-05 00:00:00	10:00	adriel gomes	Bruno	558196649167@s.whatsapp.net	2025-06-25 00:00:00	Cabelo+Barba
+7aaba1c6-167e-427b-9798-f2b98d8835ed	2025-06-28 00:00:00	14:00	joão guilherme	Bruno	558192101006@s.whatsapp.net	2025-06-25 00:00:00	Cabelo
+ed3742fb-9f58-417d-89e5-4598a05fdbbb	2025-06-26 00:00:00	13:20	lucas rafael	Bruno	558197593200@s.whatsapp.net	2025-06-25 00:00:00	Cabelo
 \.
 
 
 --
--- TOC entry 3370 (class 0 OID 16401)
--- Dependencies: 216
--- Data for Name: HorariosBruno; Type: TABLE DATA; Schema: public; Owner: agendamento_bruno_user
+-- Data for Name: HorariosBruno; Type: TABLE DATA; Schema: public; Owner: agendamentos_723j_user
 --
 
 COPY public."HorariosBruno" ("diaSemana", horarios) FROM stdin;
-Sexta	{09:00,09:40,10:20,11:00,11:40,13:20,14:00,14:40,15:20,16:00,16:40,17:20,18:00,18:40,19:20,20:00}
-Terca	{09:00,09:40,10:20,11:00,11:40,13:20,14:00,14:40,15:20,16:00,16:40,17:20,18:00,18:40}
-Quarta	{09:00,09:40,10:20,11:00,11:40,13:20,14:00,14:40,15:20,16:00,16:40,17:20,18:00,18:40}
 Quinta	{09:00,09:40,10:20,11:00,11:40,13:20,14:00,14:40,15:20,16:00,16:40,17:20,18:00,18:40}
-Segunda	{09:40,10:20,11:00,11:40,13:20,14:00,14:40,15:20,16:00,16:40,17:20,18:00,18:40}
 Sabado	{08:00,09:20,10:00,10:40,11:20,12:00,14:00,14:40,15:20,16:00,16:40,17:20}
+Sexta	{09:00,09:40,10:20,11:00,11:40,13:20,14:00,14:40,15:20,16:00,16:40,17:20,18:00,18:40,19:20,20:00}
+Quarta	{09:00,09:40,10:20,11:00,11:40,13:20,14:00,14:40,15:20,16:00,16:40,17:20,18:00,18:40}
+Terca	{09:00,09:40,10:20,11:00,11:40,13:20,14:00,14:40,15:20,16:00,16:40,17:20,18:00,18:40,19:20}
+Segunda	{09:40,10:20,11:00,11:40,13:20,14:00,14:40,15:20,16:00,16:40,17:20,18:00,18:40}
 \.
 
 
 --
--- TOC entry 3371 (class 0 OID 16406)
--- Dependencies: 217
--- Data for Name: HorariosWallyson; Type: TABLE DATA; Schema: public; Owner: agendamento_bruno_user
+-- Data for Name: HorariosWallyson; Type: TABLE DATA; Schema: public; Owner: agendamentos_723j_user
 --
 
 COPY public."HorariosWallyson" ("diaSemana", horarios) FROM stdin;
@@ -2813,9 +3366,7 @@ Sexta	{08:00,08:40,09:20,10:00,10:40,11:20,13:20,14:00,14:40,15:20,16:00,16:40,1
 
 
 --
--- TOC entry 3372 (class 0 OID 16411)
--- Dependencies: 218
--- Data for Name: _prisma_migrations; Type: TABLE DATA; Schema: public; Owner: agendamento_bruno_user
+-- Data for Name: _prisma_migrations; Type: TABLE DATA; Schema: public; Owner: agendamentos_723j_user
 --
 
 COPY public._prisma_migrations (id, checksum, finished_at, migration_name, logs, rolled_back_at, started_at, applied_steps_count) FROM stdin;
@@ -2835,8 +3386,7 @@ e91bce99-76eb-4aec-842f-d8afa6f0725d	b23fe003785df4c782b158447ef7bf6bb360dc5fe61
 
 
 --
--- TOC entry 3221 (class 2606 OID 16422)
--- Name: Agendamentos Agendamentos_pkey; Type: CONSTRAINT; Schema: public; Owner: agendamento_bruno_user
+-- Name: Agendamentos Agendamentos_pkey; Type: CONSTRAINT; Schema: public; Owner: agendamentos_723j_user
 --
 
 ALTER TABLE ONLY public."Agendamentos"
@@ -2844,8 +3394,7 @@ ALTER TABLE ONLY public."Agendamentos"
 
 
 --
--- TOC entry 3225 (class 2606 OID 16424)
--- Name: _prisma_migrations _prisma_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: agendamento_bruno_user
+-- Name: _prisma_migrations _prisma_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: agendamentos_723j_user
 --
 
 ALTER TABLE ONLY public._prisma_migrations
@@ -2853,54 +3402,46 @@ ALTER TABLE ONLY public._prisma_migrations
 
 
 --
--- TOC entry 3222 (class 1259 OID 16425)
--- Name: HorariosBruno_diaSemana_key; Type: INDEX; Schema: public; Owner: agendamento_bruno_user
+-- Name: HorariosBruno_diaSemana_key; Type: INDEX; Schema: public; Owner: agendamentos_723j_user
 --
 
 CREATE UNIQUE INDEX "HorariosBruno_diaSemana_key" ON public."HorariosBruno" USING btree ("diaSemana");
 
 
 --
--- TOC entry 3223 (class 1259 OID 16426)
--- Name: HorariosWallyson_diaSemana_key; Type: INDEX; Schema: public; Owner: agendamento_bruno_user
+-- Name: HorariosWallyson_diaSemana_key; Type: INDEX; Schema: public; Owner: agendamentos_723j_user
 --
 
 CREATE UNIQUE INDEX "HorariosWallyson_diaSemana_key" ON public."HorariosWallyson" USING btree ("diaSemana");
 
 
 --
--- TOC entry 2050 (class 826 OID 16391)
 -- Name: DEFAULT PRIVILEGES FOR SEQUENCES; Type: DEFAULT ACL; Schema: -; Owner: postgres
 --
 
-ALTER DEFAULT PRIVILEGES FOR ROLE postgres GRANT ALL ON SEQUENCES TO agendamento_bruno_user;
+ALTER DEFAULT PRIVILEGES FOR ROLE postgres GRANT ALL ON SEQUENCES TO agendamentos_723j_user;
 
 
 --
--- TOC entry 2052 (class 826 OID 16393)
 -- Name: DEFAULT PRIVILEGES FOR TYPES; Type: DEFAULT ACL; Schema: -; Owner: postgres
 --
 
-ALTER DEFAULT PRIVILEGES FOR ROLE postgres GRANT ALL ON TYPES TO agendamento_bruno_user;
+ALTER DEFAULT PRIVILEGES FOR ROLE postgres GRANT ALL ON TYPES TO agendamentos_723j_user;
 
 
 --
--- TOC entry 2051 (class 826 OID 16392)
 -- Name: DEFAULT PRIVILEGES FOR FUNCTIONS; Type: DEFAULT ACL; Schema: -; Owner: postgres
 --
 
-ALTER DEFAULT PRIVILEGES FOR ROLE postgres GRANT ALL ON FUNCTIONS TO agendamento_bruno_user;
+ALTER DEFAULT PRIVILEGES FOR ROLE postgres GRANT ALL ON FUNCTIONS TO agendamentos_723j_user;
 
 
 --
--- TOC entry 2049 (class 826 OID 16390)
 -- Name: DEFAULT PRIVILEGES FOR TABLES; Type: DEFAULT ACL; Schema: -; Owner: postgres
 --
 
-ALTER DEFAULT PRIVILEGES FOR ROLE postgres GRANT ALL ON TABLES TO agendamento_bruno_user;
+ALTER DEFAULT PRIVILEGES FOR ROLE postgres GRANT ALL ON TABLES TO agendamentos_723j_user;
 
-
--- Completed on 2025-05-27 22:50:10 UTC
 
 --
 -- PostgreSQL database dump complete
