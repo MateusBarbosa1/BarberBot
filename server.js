@@ -1,5 +1,5 @@
 const makeWASocket = require('@whiskeysockets/baileys').default;
-const { useMultiFileAuthState } = require('@whiskeysockets/baileys');
+const { useMultiFileAuthState, fetchLatestBaileysVersion } = require('@whiskeysockets/baileys');
 const qrcode = require('qrcode-terminal');
 
 const path = require("path");
@@ -14,17 +14,19 @@ const authDirectory = path.join(__dirname, 'wwebjs_auth');
 
 // Configuração da autenticação no Baileys
 const startBot = async () => {
+    const { version, isLatest } = await fetchLatestBaileysVersion();
     const { state, saveCreds } = await useMultiFileAuthState(authDirectory);
 
     const sock = makeWASocket({
         auth: state,
+        browser: ['Ubuntu', 'Chrome', '22.04'], // Evite usar "Baileys" ou "NodeJS"
         printQRInTerminal: true, // Mostra o QR code automaticamente no terminal
         markOnlineOnConnect: false
     });
 
     // Evento de QR Code
     sock.ev.on('connection.update', (update) => {
-        const { connection, qr } = update;
+        const { connection, qr, lastDisconnect } = update;
         if (qr) {
             console.log('BARBOSA DEV - Escaneie o código para a conexão:');
             qrcode.generate(qr, { small: true });
@@ -32,9 +34,10 @@ const startBot = async () => {
 
         if (connection === 'open') {
             console.log('Conectado com sucesso!');
-        } else if (connection === 'close') {
-            console.log('Bot desconectado. Tentando reconectar...');
-            startBot();
+        }
+        if(connection === 'close') {
+            const shouldReconnect = (lastDisconnect?.error)?.output?.statusCode !== 401
+            if(shouldReconnect) startBot()
         }
     });
 
