@@ -74,6 +74,10 @@ const startBot = async () => {
                         case '4': await controllers.selectService(sock, msg, 4, msg_user); break;
                         case '5': await controllers.selectService(sock, msg, 5, msg_user); break;
                         case '6': await controllers.selectService(sock, msg, 6, msg_user); break;
+                        case '7': await controllers.selectService(sock, msg, 4, msg_user); break;
+                        case '8': await controllers.selectService(sock, msg, 5, msg_user); break;
+                        case '9': await controllers.selectService(sock, msg, 6, msg_user); break;
+                        case '10': await controllers.selectService(sock, msg, 6, msg_user); break;
                         case 'b':
                         case 'bruno': await controllers.selectBarber(sock, msg, 1, msg_user); break;
                         case 'w':

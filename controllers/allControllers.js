@@ -83,7 +83,7 @@ async function optionAgendarORCabelo(sock, message, msg_user) { // QUANDO DIGITA
             return;
         }
         await sock.sendMessage(usuario_atual, {
-            text: 'Selecione qual serviço você deseja!\n\n1 - Cabelo\n2 - Barba\n3 - Sobrancelha\n4 - Acabamento (Pezinho)\n5 - Cabelo+Sobrancelha\n6 - Cabelo+Barba\n\nTABELA DE PREÇOS\n\nCabelo - R$ 25\nBarba - R$ 20\nSobrancelha - R$ 10\nAcabamento (Pezinho) - R$ 10\nCabelo+Sobrancelha - R$ 30\nCabelo+Barba - R$ 40\n\nDigite 0 para voltar ao inicio!'
+            text: 'Selecione qual serviço você deseja!\n\n1 - Cabelo\n2 - Barba\n3 - Sobrancelha\n4 - Acabamento (Pezinho)\n5 - Cabelo+Sobrancelha\n6 - Cabelo+Barba\n7 - Acabamento+Sobrancelha\n8 - Cabelo+Hidratação\n\nTABELA DE PREÇOS\n\nCabelo - R$ 30\nBarba - R$ 25\nSobrancelha - R$ 10\nAcabamento (Pezinho) - R$ 10\nCabelo+Sobrancelha - R$ 35\nCabelo+Barba - R$ 50\nAcabamento+Sobrancelha - R$ 15\nCabelo+Hidratação - R$ 45\nLuzes - A partir de R$ 60\nHidratação - R$ 20\nProgressiva - A partir de R$ 65\nBotox - A partir de R$ 55\n\nDigite 0 para voltar ao inicio!'
         });
         stage[usuario_atual] = 2;
         return;
@@ -126,7 +126,7 @@ async function optionAtendenteORSobrancelha(sock, message, msg_user) {
 }
 async function selectService(sock, message, service, msg_user) { // SELECIONANDO O SERVIÇO
     const usuario_atual = message.key.remoteJid;
-    services = ['Cabelo','Barba','Sobrancelha','Acabamento (Pezinho)','Cabelo+Sobrancelha','Cabelo+Barba'];
+    services = ['Cabelo','Barba','Sobrancelha','Acabamento (Pezinho)','Cabelo+Sobrancelha','Cabelo+Barba','Acabamento+Sobrancelha', 'Cabelo+Hidratação'];
     if(stage[usuario_atual] == 2) {
         info[usuario_atual].servico = services[service-1]; // preenchendo o serviço
         await sock.sendMessage(usuario_atual, {
