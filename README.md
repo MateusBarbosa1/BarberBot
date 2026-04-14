@@ -11,8 +11,8 @@ O **BarberBot** é um bot inteligente desenvolvido para automatizar o processo d
 - ❌ Cancelamento de agendamentos
 - 🔁 Reagendamento fácil
 - 👤 Cadastro de clientes
-- 💬 Integração com chat (WhatsApp, Telegram ou Web)
-- 📊 Painel administrativo (opcional)
+- 💬 Integração com chat
+- 📊 Painel administrativo
 
 ---
 
