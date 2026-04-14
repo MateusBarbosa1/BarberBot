@@ -18,11 +18,11 @@ O **BarberBot** é um bot inteligente desenvolvido para automatizar o processo d
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Backend:** Node.js / Python
-- **Banco de Dados:** PostgreSQL / MongoDB
-- **Bot:** API do WhatsApp / Telegram Bot API
-- **ORM:** Prisma / Mongoose
-- **Hospedagem:** Docker / VPS / Cloud
+- **Backend:** Node.js
+- **Banco de Dados:** PostgreSQL
+- **Bot:** API do WhatsApp
+- **ORM:** Prisma
+- **Hospedagem:** Docker / Render
 
 ---
 
